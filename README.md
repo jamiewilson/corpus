@@ -1,1 +1,1 @@
-Corpus is a CSS toolkit. If you would like to use it take a look at http://corpuscss.com.
+Corpus is a small CSS toolkit. Learn more at http://corpuscss.com.
