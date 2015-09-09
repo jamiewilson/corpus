@@ -1,0 +1,68 @@
+//====================================================
+//  Buttons
+//====================================================
+
+button,
+input[type=submit] {
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  -webkit-appearance: none;
+
+  color: $white;
+  background: $accent;
+  border: $border-1 $border-style transparent;
+  font-size: inherit;
+  text-align: center;
+  line-height: 1;
+  height: 100%;
+  display: inline-block;
+  border-radius: $border-radius;
+  padding: $padding-fixed;
+  transition: box-shadow 200ms;
+
+  &:hover  { box-shadow: inset 0 0 0 20rem fade-out($black, 0.9);}
+  &:active { transform: translateY(1px); }
+  &:disabled { opacity: 0.6; transition: none; cursor: progress; }
+
+  @include small {
+    width: 100%;
+  }
+}
+
+.btn {
+  @extend button;
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn-large {
+  padding: 1.5rem;
+}
+
+.btn-secondary {
+  background: $midgrey;
+}
+
+.btn-outline {
+  color: $accent;
+  background-color: transparent;
+  border-color: currentColor;
+  transition: background 200ms, color 200ms;
+  &:hover {
+    color: $white;
+    background: $accent;
+    box-shadow: none;
+    border-color: transparent;
+  }
+}
+
+.btn-small {
+  padding: 0.5rem;
+}
+
+.btn-tiny {
+  font-size: 80%;
+  padding: 0.25rem;
+}

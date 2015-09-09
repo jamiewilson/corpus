@@ -1,0 +1,83 @@
+// ====================================================
+//   Basic Positioning Properties
+// ====================================================
+
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
+
+// ====================================================
+//   Positioning for Flex Items
+// ====================================================
+
+// Columns & Rows need reversed styles to create the same effect
+
+.center               { align-items: center; justify-content: center; }
+.top-left             { align-items: flex-start; justify-content: flex-start; }
+.bottom-right         { align-items: flex-end; justify-content: flex-end; }
+
+.column.top-center    { align-items: center; justify-content: flex-start; }
+.column.top-right     { align-items: flex-end; justify-content: flex-start; }
+.column.center-left   { align-items: flex-start; justify-content: center; }
+.column.center-right  { align-items: flex-end; justify-content: center; }
+.column.bottom-left   { align-items: flex-start; justify-content: flex-end; }
+.column.bottom-center { align-items: center; justify-content: flex-end; }
+
+.row.top-center       { align-items: flex-start; justify-content: center; }
+.row.top-right        { align-items: flex-start; justify-content: flex-end; }
+.row.center-left      { align-items: center; justify-content: flex-start; }
+.row.center-right     { align-items: center; justify-content: flex-end; }
+.row.bottom-left      { align-items: flex-end; justify-content: flex-start; }
+.row.bottom-center    { align-items: flex-end; justify-content: center; }
+
+// ====================================================
+//   Flex Item Alignment
+// ====================================================
+
+.space-around   { justify-content: space-around; }
+.space-between  { justify-content: space-between; }
+
+.align-top      { align-items: flex-start; }
+.align-middle   { align-items: middle; }
+.align-baseline { align-items: baseline; }
+.align-stretch  { align-items: stretch; }
+
+//====================================================
+//  Flex Order
+//====================================================
+
+.order-1  { order: 1; }
+.order-2  { order: 2; }
+.order-3  { order: 3; }
+.order-4  { order: 4; }
+.order-5  { order: 5; }
+.order-6  { order: 6; }
+.order-7  { order: 7; }
+.order-8  { order: 8; }
+.order-9  { order: 9; }
+.order-10 { order: 10; }
+
+// ====================================================
+//   Absolute Positioning
+// ====================================================
+
+.top    { top: 0; }
+.right  { right: 0; }
+.bottom { bottom: 0; }
+.left   { left: 0; }
+
+.absolute-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto
+}
+
+// ====================================================
+//   Floats
+// ====================================================
+
+.float-left  { float: left; }
+.float-right { float: right; }

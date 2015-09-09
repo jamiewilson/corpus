@@ -1,0 +1,25 @@
+$sidebar-width: 300px !default;
+
+.sidebar {
+  width: $sidebar-width;
+  @include medium {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// If sidebar exists,
+// offset <main> by it width
+.sidebar + main {
+  margin-left: $sidebar-width;
+  @include medium {
+    margin-left: 0;
+  }
+}
+
+.sidebar.fixed,
+.sidebar.absolute, {
+  @include medium {
+    position: static;
+  }
+}

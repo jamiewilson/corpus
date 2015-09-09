@@ -1,0 +1,20 @@
+//====================================================
+//  Background/Image Size & Position
+//====================================================
+
+.bg-no-repeat { background-repeat: no-repeat; }
+.bg-cover     { background-size: cover; }
+.bg-contain   { background-size: contain; }
+.bg-center    { background-position: center; }
+.bg-top       { background-position: top; }
+.bg-right     { background-position: right; }
+.bg-bottom    { background-position: bottom; }
+.bg-left      { background-position: left; }
+
+.bg-fixed     { background-attachment: fixed; }
+.bg-local     { background-attachment: local; }
+
+.img-cover      { object-fit: cover; }
+.img-contain    { object-fit: contain; }
+.img-fill       { object-fit: fill; }
+.img-scale-down { object-fit: scale-down; }

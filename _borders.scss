@@ -1,0 +1,48 @@
+//====================================================
+//  Borders
+//====================================================
+
+$border-style: solid !default;
+$border-color: rgba(0,0,0,0.1) !default;
+$border-radius: 3px !default;
+
+$border-1: 1px !default;
+$border-2: 2px !default;
+$border-3: 3px !default;
+
+.b0 { border: none; }
+.b1 { border: $border-1 $border-style $border-color; }
+.b2 { border: $border-2 $border-style $border-color; }
+.b3 { border: $border-3 $border-style $border-color; }
+
+// Top
+.bt0 { border-top: none; }
+.bt1 { border-top: $border-1 $border-style $border-color; }
+.bt2 { border-top: $border-2 $border-style $border-color; }
+.bt3 { border-top: $border-3 $border-style $border-color; }
+
+// Right
+.br0 { border-right: none; }
+.br1 { border-right: $border-1 $border-style $border-color; }
+.br2 { border-right: $border-2 $border-style $border-color; }
+.br3 { border-right: $border-3 $border-style $border-color; }
+
+// Bottom
+.bb0 { border-bottom: none; }
+.bb1 { border-bottom: $border-1 $border-style $border-color; }
+.bb2 { border-bottom: $border-2 $border-style $border-color; }
+.bb3 { border-bottom: $border-3 $border-style $border-color; }
+
+// Left
+.bl0 { border-left: none; }
+.bl1 { border-left: $border-1 $border-style $border-color; }
+.bl2 { border-left: $border-2 $border-style $border-color; }
+.bl3 { border-left: $border-3 $border-style $border-color; }
+
+//====================================================
+//  Border Radius
+//====================================================
+
+.rounded     { border-radius: $border-radius; }
+.not-rounded { border-radius: 0; }
+.circle      { border-radius: 50%; }

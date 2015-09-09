@@ -1,0 +1,35 @@
+//====================================================
+//  Grid
+//====================================================
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
+  flex-wrap: nowrap;
+  @include small {
+    min-width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  flex: 1 1 auto;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+// Add .gutters to .row/.column elements
+.gutters { padding: $padding-percent; }
+
+// All direct descendants of .gutters get margin
+.gutters > .column,
+.gutters > .row {
+  margin: $margin-percent;
+  @include small {
+    width: 100% !important;
+    min-width: 0;
+  }
+}

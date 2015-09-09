@@ -1,0 +1,24 @@
+$small-break: 480px !default;
+$medium-break: 800px !default;
+
+@mixin small() {
+  @media screen and (max-width: $small-break) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media screen and (max-width: $medium-break) {
+    @content;
+  }
+}
+
+@mixin large() {
+  @media screen and (min-width: $small-break) {
+    @content;
+  }
+}
+
+.hide-on-small  { @include small { display: none !important; }}
+.hide-on-medium { @include medium { display: none !important; }}
+.hide-on-large  { @include large { display: none !important; }}

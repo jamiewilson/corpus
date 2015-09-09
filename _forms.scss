@@ -1,0 +1,176 @@
+.input[type=button],
+.input[type=date],
+.input[type=datetime],
+.input[type=email],
+.input[type=file],
+.input[type=hidden],
+.input[type=image],
+.input[type=month],
+.input[type=number],
+.input[type=password],
+.input[type=range],
+.input[type=reset],
+.input[type=search],
+.input[type=submit],
+.input[type=tel],
+.input[type=text],
+.input[type=time],
+.input[type=url],
+.input[type=week],,
+.select,
+.textarea {
+  border-color: $border-color;
+  border-style: $border-style;
+  border-width: $border-1;
+  font-size: $base-font-size;
+  height: auto;
+  outline: none;
+  padding: $padding-fixed;
+  width: 100%;
+  transition: border-color 200ms;
+
+  &:focus {
+    border-color: $midgrey;
+  }
+}
+
+.input[required],
+.input:invalid,
+.input:valid  {
+  padding-right: 2.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.input:invalid,
+.input:valid  {
+  background-repeat: no-repeat;
+  background-size: 8px;
+  background-position: right 1rem center;
+}
+
+.input.textarea[required],
+.input.textarea:invalid,
+.input.textarea:valid {
+  background-position: right 1rem top 1rem;
+}
+
+.input[required] { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 8 16 16" enable-background="new 0 8 16 16"><style type="text/css">.st0{fill:#F18260;}</style><path class="st0" d="M7.2 17.4l-5.4 3.8-1.4-2.5 6-2.7-6.1-2.8 1.4-2.4 5.4 3.8-.5-6.6h2.7l-.5 6.6 5.4-3.8 1.4 2.4-6 2.8 6.1 2.8-1.4 2.5-5.4-3.8.5 6.5h-2.8l.6-6.6z"/></svg>'); }
+.input:valid { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><circle fill="#B4D388" cx="8" cy="8" r="8"/></svg>'); }
+.input:focus:invalid { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><circle fill="#CF5340" cx="8" cy="8" r="8"/></svg>'); }
+
+.input[novalidate],
+.input.novalidate,
+.input.hide-validate-icon {
+  background-image: none;
+}
+
+.input-wrap,
+.radio-group,
+.checkbox-group,
+.fieldset {
+  margin-bottom: $margin-fixed * 2;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: $margin-fixed / 2;
+}
+
+.fieldset {
+  background-color: $silver;
+  border: $border-1 $border-style $border-color;
+  padding: $padding-fixed ($padding-fixed * 2);
+}
+
+.radio-group,
+.checkbox-group {
+  border-radius: $border-radius;
+  background-color: $silver;
+  padding: $padding-fixed ($padding-fixed * 1.5);
+}
+
+.radio-wrap,
+.checkbox-wrap {
+  display: inline-block;
+  margin-right: $margin-fixed;
+  &:last-child { margin-right: 0; }
+
+  @include small {
+    display: block;
+  }
+}
+
+.stacked .radio-wrap:not(:last-child),
+.stacked .checkbox-wrap:not(:last-child) {
+  display: block;
+}
+
+//====================================================
+//  Select Menus
+//====================================================
+.select {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="11" viewBox="-469 273 8 11" enable-background="new -469 273 8 11"><path fill="#B4B4B4" d="M-469 277l4-4 4 4zM-461 280l-4 4-4-4z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+
+//====================================================
+//  Color Input
+//====================================================
+
+.input[type=color] {
+  background-color: $white;
+  cursor: pointer;
+  outline: none;
+  height: 50px;
+  padding: 5px;
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      padding: 1rem;
+  }
+}
+
+input[type=color]::-webkit-color-swatch {
+  border: none !important;
+}
+input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0 !important;
+}
+
+//====================================================
+//  HTML Date Picker
+//====================================================
+
+::-webkit-calendar-picker-indicator,
+::-webkit-calendar-picker-indicator:hover {
+  background: transparent;
+  color: $accent;
+  padding: 0;
+  padding-left: 1rem;
+}
+
+::-webkit-datetime-edit-fields-wrapper { padding: 0; }
+::-webkit-inner-spin-button { display: none; }
+
+//====================================================
+//  File Upload
+//====================================================
+
+.input[type=file] {
+  font-size: 0.75rem;
+  background-color: $silver;
+}
+
+//====================================================
+//  Reset Button
+//====================================================
+
+.input[type=reset] {
+  background-color: $silver;
+  border-color: $grey;
+  color: $black;
+  cursor: pointer;
+}

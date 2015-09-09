@@ -1,0 +1,11 @@
+.section-header {
+  // class="color-accent bb bw3 pb1 mb4"
+  color: $accent;
+  border-bottom: $border-3 $border-style $border-color;
+  padding-bottom: $padding-fixed;
+  margin-bottom: $margin-fixed * 4;
+}
+
+:target .section-header {
+   animation: flash 400ms 3;
+}

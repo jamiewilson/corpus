@@ -1,0 +1,111 @@
+/* Corpus's Default Variables
+
+//====================================================
+//  _typography.scss
+//====================================================
+
+@font-face { font-family: 'Office Code Pro'; src: url('../fonts/OfficeCodePro-Regular.woff'); }
+$base-font: 'Helvetica Neue', Helvetica, sans-serif !default;
+$mono-font: 'Office Code Pro', Monaco, Consolas, monospace !default;
+$base-font-size: 1rem !default;
+$base-line-height: 1.6 !default;
+
+$h1: $base-font-size * 2.25 !default;
+$h2: $base-font-size * 1.75 !default;
+$h3: $base-font-size * 1.5 !default;
+$h4: $base-font-size * 1.25 !default;
+$h5: $base-font-size * 1.125 !default;
+$h6: $base-font-size !default;
+
+//====================================================
+//  _sizing.scss
+//====================================================
+
+$container-width: 1000px;
+
+//====================================================
+//  _sidebar.scss
+//====================================================
+
+$sidebar-width: 300px;
+
+//====================================================
+//  _colors.scss
+//====================================================
+
+$accent:    #F18260;
+$white:     #fff;
+$silver:    #F4F4F4;
+$lightgrey: #ececec;
+$grey:      #ccc;
+$midgrey:   #777;
+$darkgrey:  #444;
+$black:     #222;
+$trueblack: #000;
+
+//====================================================
+//  _syntax.scss
+//====================================================
+
+// Cools
+$paleblue:   #BDDCDC;
+$blue:       #92BFBF;
+$slate:      #5F777E;
+$palegreen:  #D0EDA7;
+$green:      #B4D388;
+$darkgreen:  #809161;
+
+// Warms
+$paleyellow: #F5F5AE;
+$yellow:     #EDE480;
+$orange:     #F49D62;
+$red:        #CF5340;
+$darkred:    #893121;
+$maroon:     #55201B;
+
+//====================================================
+//  _whitespace.scss
+//====================================================
+
+$padding-percent: 2%;
+$padding-fixed:   1rem;
+$margin-percent:  2%;
+$margin-fixed:    1rem;
+
+//====================================================
+//  _borders.scss
+//====================================================
+
+$border-style: solid;
+$border-color: rgba(0,0,0,0.1);
+$border-radius: 3px !default;
+
+$border-1: 1px;
+$border-2: 2px;
+$border-3: 3px;
+
+//====================================================
+//  _breakpoints.scss
+//====================================================
+
+$small-break: 480px;
+$medium-break: 800px;
+
+@mixin small() {
+  @media screen and (max-width: $small-break) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media screen and (max-width: $medium-break) {
+    @content;
+  }
+}
+
+@mixin large() {
+  @media screen and (min-width: $small-break) {
+    @content;
+  }
+}
+*/

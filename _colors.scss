@@ -1,0 +1,58 @@
+$accent:    #F18260 !default;
+$white:     #fff !default;
+$silver:    #F4F4F4 !default;
+$lightgrey: #ececec !default;
+$grey:      #ccc !default;
+$midgrey:   #777 !default;
+$darkgrey:  #444 !default;
+$black:     #222 !default;
+$trueblack: #000 !default;
+
+//====================================================
+//  Text Colors
+//====================================================
+
+.color-accent      { color: $accent; }
+.color-white       { color: $white; }
+.color-silver      { color: $silver; }
+.color-lightgrey   { color: $lightgrey; }
+.color-grey        { color: $grey; }
+.color-midgrey     { color: $midgrey; }
+.color-darkgrey    { color: $darkgrey; }
+.color-black       { color: $black; }
+.color-trueblack   { color: $trueblack; }
+.color-inherit     { color: inherit; }
+.color-transparent { color: transparent; }
+
+//====================================================
+//  Background Colors
+//====================================================
+
+.bg-accent      { background-color: $accent; }
+.bg-white       { background-color: $white; }
+.bg-silver      { background-color: $silver; }
+.bg-lightgrey   { background-color: $lightgrey; }
+.bg-grey        { background-color: $grey; }
+.bg-midgrey     { background-color: $midgrey; }
+.bg-darkgrey    { background-color: $darkgrey; }
+.bg-black       { background-color: $black; }
+.bg-trueblack   { background-color: $trueblack; }
+.bg-transparent { background-color: transparent; }
+
+//====================================================
+//  Border Colors / _borders.scss
+//====================================================
+
+// TODO: Figure out best way to eliminate !important
+// !important needed to override color property in shorthand
+
+.border-accent      { border-color: $accent !important; }
+.border-white       { border-color: $white !important; }
+.border-silver      { border-color: $silver !important; }
+.border-lightgrey   { border-color: $lightgrey !important; }
+.border-grey        { border-color: $grey !important; }
+.border-midgrey     { border-color: $midgrey !important; }
+.border-darkgrey    { border-color: $darkgrey !important; }
+.border-black       { border-color: $black !important; }
+.border-trueblack   { border-color: $trueblack !important; }
+.border-transparent { border-color: transparent !important; }

@@ -1,0 +1,92 @@
+//====================================================
+//  Animation
+//====================================================
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(1.5rem); }
+  to { opacity: 1; transform: translateY(0); }}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-1.5rem); }
+  to { opacity: 1; transform: translateY(0); }}
+
+@keyframes scaleUp {
+  from { transform: scale(0); }
+  to   { transform: scale(1); }}
+
+@keyframes scaleDown {
+  from { transform: scale(1); }
+  to   { transform: scale(0); }}
+
+@keyframes slideUp {
+  from { transform: translateY(25vh); }
+  to   { transform: translateY(0); }}
+
+@keyframes slideDown {
+  from { transform: translateY(-25vh); }
+  to   { transform: translateY(0); }}
+
+@keyframes slideLeft {
+  from { transform: translateX(25vh); }
+  to   { transform: translateX(0); }}
+
+@keyframes slideRight {
+  from { transform: translateX(-25vh); }
+  to   { transform: translateX(0); }}
+
+@keyframes flip {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }}
+
+@keyframes flash {
+  from { opacity: 1; }
+  to   { opacity: 0.25; }}
+
+@keyframes shake {
+  15% { transform: translateX(0.5rem); }
+  30% { transform: translateX(-0.4rem); }
+  45% { transform: translateX(0.3rem); }
+  60% { transform: translateX(-0.2rem); }
+  75% { transform: translateX(0.1rem); }
+  90% { transform: translateX(0); }
+  90% { transform: translateX(0); }}
+
+//====================================================
+//  Animation Utility Classes
+//====================================================
+
+.fadeIn      { animation: fadeIn 500ms; }
+.fadeOut     { animation: fadeOut 500ms; }
+
+.fadeInUp    { animation: fadeInUp 500ms; }
+.fadeInDown  { animation: fadeInDown 500ms; }
+
+.slideUp     { animation: slideUp 200ms ease-in-out; }
+.slideDown   { animation: slideDown 200ms ease-in-out; }
+
+.slideRight  { animation: slideRight 200ms ease-in-out; }
+.slideLeft   { animation: slideLeft 200ms ease-in-out; }
+
+.scaleUp     { animation: scaleUp 200ms ease-in-out; }
+.scaleDown   { animation: scaleDown 200ms ease-in-out; }
+
+.flipIn      { animation: flip 200ms cubic-bezier(0.5, -0.5, 0.5, 1.5) forwards, fadeIn 400ms forwards; }
+.flipOut     { animation: flip 200ms cubic-bezier(0.5, -0.5, 0.5, 1.5) backwards, fadeIn 400ms backwards; }
+
+.rotateRight { animation: rotate 500ms; }
+.rotateLeft  { animation: rotate 500ms backwards; }
+
+.flash       { animation: flash 500ms; }
+.shake       { animation: wobble 200ms; }

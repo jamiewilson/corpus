@@ -1,0 +1,63 @@
+//====================================================
+//  Display
+//====================================================
+
+.hidden       { display: none; }
+.block        { display: block; }
+.flex         { display: flex; }
+.inline       { display: inline; }
+.inline-block { display: inline-block; }
+.inline-flex  { display: inline-flex; }
+
+.overflow-hidden { overflow: hidden; }
+.overflow-scroll { overflow: scroll; }
+.overflow-auto   { overflow: auto; }
+
+//====================================================
+//  Text wrap
+//====================================================
+
+.pre       { white-space: pre; }
+.nowrap    { white-space: nowrap; }
+
+//====================================================
+//  Scrolling
+//====================================================
+
+.scroll-horizontal {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.scroll-vertical {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+//====================================================
+//  Textareas
+//====================================================
+
+.resize-none       { resize: none; }
+.resize-vertical   { resize: vertical; }
+.resize-horizontal { resize: horizontal; }
+
+//====================================================
+//  Misc.
+//====================================================
+
+.no-pointer-events {
+  pointer-events: none;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

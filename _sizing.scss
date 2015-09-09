@@ -1,0 +1,185 @@
+//====================================================
+//  Sizing
+//====================================================
+
+.fullscreen { min-height: 100vh; min-width: 100%; }
+
+//====================================================
+//  Flex Sizing
+//====================================================
+
+.flex1 { flex: 1; }
+.flex2 { flex: 2; }
+.flex3 { flex: 3; }
+.flex4 { flex: 4; }
+.flex5 { flex: 5; }
+
+//====================================================
+//  Width
+//====================================================
+
+.w-auto    { width: auto    !important; }
+.w-inherit { width: inherit !important; }
+.w-initial { width: initial !important; }
+
+// Viewport-based width
+.vw5   { width: 5vw;  }
+.vw10  { width: 10vw; }
+.vw15  { width: 15vw; }
+.vw20  { width: 20vw; }
+.vw25  { width: 25vw; }
+.vw30  { width: 30vw; }
+.vw35  { width: 35vw; }
+.vw40  { width: 40vw; }
+.vw45  { width: 45vw; }
+.vw50  { width: 50vw; }
+.vw55  { width: 55vw; }
+.vw60  { width: 60vw; }
+.vw65  { width: 65vw; }
+.vw70  { width: 70vw; }
+.vw75  { width: 75vw; }
+.vw80  { width: 80vw; }
+.vw85  { width: 85vw; }
+.vw90  { width: 90vw; }
+.vw95  { width: 95vw; }
+.vw100 { width: 100vw;}
+
+// Percentage-based width
+.w5    { width: 5%;  }
+.w10   { width: 10%; }
+.w15   { width: 15%; }
+.w20   { width: 20%; }
+.w25   { width: 25%; }
+.w30   { width: 30%; }
+.w35   { width: 35%; }
+.w40   { width: 40%; }
+.w45   { width: 45%; }
+.w50   { width: 50%; }
+.w55   { width: 55%; }
+.w60   { width: 60%; }
+.w65   { width: 65%; }
+.w70   { width: 70%; }
+.w75   { width: 75%; }
+.w80   { width: 80%; }
+.w85   { width: 85%; }
+.w90   { width: 90%; }
+.w95   { width: 95%; }
+.w100  { width: 100%;}
+
+.max-w5    { max-width: 5%;  }
+.max-w10   { max-width: 10%; }
+.max-w15   { max-width: 15%; }
+.max-w20   { max-width: 20%; }
+.max-w25   { max-width: 25%; }
+.max-w30   { max-width: 30%; }
+.max-w35   { max-width: 35%; }
+.max-w40   { max-width: 40%; }
+.max-w45   { max-width: 45%; }
+.max-w50   { max-width: 50%; }
+.max-w55   { max-width: 55%; }
+.max-w60   { max-width: 60%; }
+.max-w65   { max-width: 65%; }
+.max-w70   { max-width: 70%; }
+.max-w75   { max-width: 75%; }
+.max-w80   { max-width: 80%; }
+.max-w85   { max-width: 85%; }
+.max-w90   { max-width: 90%; }
+.max-w95   { max-width: 95%; }
+.max-w100  { max-width: 100%;}
+
+.min-w5    { min-width: 5%;  }
+.min-w10   { min-width: 10%; }
+.min-w15   { min-width: 15%; }
+.min-w20   { min-width: 20%; }
+.min-w25   { min-width: 25%; }
+.min-w30   { min-width: 30%; }
+.min-w35   { min-width: 35%; }
+.min-w40   { min-width: 40%; }
+.min-w45   { min-width: 45%; }
+.min-w50   { min-width: 50%; }
+.min-w55   { min-width: 55%; }
+.min-w60   { min-width: 60%; }
+.min-w65   { min-width: 65%; }
+.min-w70   { min-width: 70%; }
+.min-w75   { min-width: 75%; }
+.min-w80   { min-width: 80%; }
+.min-w85   { min-width: 85%; }
+.min-w90   { min-width: 90%; }
+.min-w95   { min-width: 95%; }
+.min-w100  { min-width: 100%;}
+
+// reference _grid.scss
+.gutters > {
+  .w5    { width:  5%  - $padding-percent - $margin-percent; }
+  .w10   { width:  10% - $padding-percent - $margin-percent; }
+  .w15   { width:  15% - $padding-percent - $margin-percent; }
+  .w20   { width:  20% - $padding-percent - $margin-percent; }
+  .w25   { width:  25% - $padding-percent - $margin-percent; }
+  .w30   { width:  30% - $padding-percent - $margin-percent; }
+  .w35   { width:  35% - $padding-percent - $margin-percent; }
+  .w40   { width:  40% - $padding-percent - $margin-percent; }
+  .w45   { width:  45% - $padding-percent - $margin-percent; }
+  .w50   { width:  50% - $padding-percent - $margin-percent; }
+  .w55   { width:  55% - $padding-percent - $margin-percent; }
+  .w60   { width:  60% - $padding-percent - $margin-percent; }
+  .w65   { width:  65% - $padding-percent - $margin-percent; }
+  .w70   { width:  70% - $padding-percent - $margin-percent; }
+  .w75   { width:  75% - $padding-percent - $margin-percent; }
+  .w80   { width:  80% - $padding-percent - $margin-percent; }
+  .w85   { width:  85% - $padding-percent - $margin-percent; }
+  .w90   { width:  90% - $padding-percent - $margin-percent; }
+  .w95   { width:  95% - $padding-percent - $margin-percent; }
+  .w100  { width: 100% - $padding-percent - $margin-percent; }
+}
+
+//====================================================
+//  Height
+//====================================================
+
+.h-auto    { height: auto !important; }
+.h-inherit { height: inherit !important; }
+.h-initial { height: initial !important; }
+
+// Viewport-based height
+.vh5   { height: 5vh;  }
+.vh10  { height: 10vh; }
+.vh15  { height: 15vh; }
+.vh20  { height: 20vh; }
+.vh25  { height: 25vh; }
+.vh30  { height: 30vh; }
+.vh35  { height: 35vh; }
+.vh40  { height: 40vh; }
+.vh45  { height: 45vh; }
+.vh50  { height: 50vh; }
+.vh55  { height: 55vh; }
+.vh60  { height: 60vh; }
+.vh65  { height: 65vh; }
+.vh70  { height: 70vh; }
+.vh75  { height: 75vh; }
+.vh80  { height: 80vh; }
+.vh85  { height: 85vh; }
+.vh90  { height: 90vh; }
+.vh95  { height: 95vh; }
+.vh100 { height: 100vh;}
+
+// Percentage-based height
+.h5    { height: 5%;  }
+.h10   { height: 10%; }
+.h15   { height: 15%; }
+.h20   { height: 20%; }
+.h25   { height: 25%; }
+.h30   { height: 30%; }
+.h35   { height: 35%; }
+.h40   { height: 40%; }
+.h45   { height: 45%; }
+.h50   { height: 50%; }
+.h55   { height: 55%; }
+.h60   { height: 60%; }
+.h65   { height: 65%; }
+.h70   { height: 70%; }
+.h75   { height: 75%; }
+.h80   { height: 80%; }
+.h85   { height: 85%; }
+.h90   { height: 90%; }
+.h95   { height: 95%; }
+.h100  { height: 100%;}
