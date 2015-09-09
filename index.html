@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Corpus. A collection of CSS things.</title>
+  <meta name="description" content="A collection of CSS things.">
+
+  <link rel="stylesheet" href="/css/corpus.css">
+  <link rel="canonical" href="http://corpuscss.com/">
+  <link rel="alternate" type="application/rss+xml" title="Corpus." href="http://corpuscss.com/feed.xml" />
+</head>
+
+  <body class="row fullscreen">
+
+    <nav class="sidebar bg-black p2 h100 fixed scroll-vertical no-scrollbar">
+  <h1 class="m0 color-white"><a class="no-underline" href="/">Corpus</a></h1>
+  <p class="color-midgrey">A collection of CSS things.</p>
+  <ul class="list-style-none lh9 bt1 border-darkgrey mt2 pt2">
+    <li><a href="#Intro">Intro</a></li>
+    <li><a href="#Typography">Typography</a></li>
+    <li><a href="#Grid">Grid</a></li>
+    <li><a href="#Sizing">Sizing</a></li>
+    <li><a href="#Whitespace">Whitespace</a></li>
+    <li><a href="#Positioning">Positioning</a></li>
+    <li><a href="#Depth">Depth</a></li>
+    <li><a href="#Forms">Forms</a></li>
+    <li><a href="#Buttons">Buttons</a></li>
+    <li><a href="#Colors">Colors</a></li>
+    <li><a href="#Borders">Borders</a></li>
+    <li><a href="#Images">Images</a></li>
+    <li><a href="#Syntax">Syntax</a></li>
+    <li><a href="#Breakpoints">Breakpoints</a></li>
+    <li><a href="#Utilities">Utilities</a></li>
+    <li><a href="#Animation">Animation</a></li>
+    <li><a href="#Variables">Variables</a></li>
+  </ul>
+</nav>
+
+    <main class="column overflow-hidden fadeIn">
+      <section id="Intro" class="p3-percent bg-lightgrey">
+  <h1 class="section-header">Intro</h1>
+  <h3 class="mb4">Corpus is yet another CSS toolkit. It’s basically a collection of the things I find <a href="http://jamiewilson.io">myself</a> returning to for each new project. It uses <a href="http://tympanus.net/codrops/css_reference/flexbox/">Flexbox</a> for the grid system, <a href="http://bitsofco.de/2015/viewport-vs-percentage-units/">viewport-based heights and percentage-based widths</a>, is heavily influenced by Basscss’s <a href="http://www.basscss.com/docs/white-space/">White Space</a> module, and has a few useful greyscale color utilities. For syntax highlighting I'm using <a href="http://prismjs.com/">Prism.js</a> and my own <a href="https://packagecontrol.io/packages/Predawn">Predawn</a> color scheme, with code set in <a href="https://github.com/nathco/Office-Code-Pro">Office Code Pro</a>. Styles are written in SCSS.</h3>
+  <h6 class="color-grey italic">In addition to Corpus, this site was built with <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="http://jekyllrb.com/">Jekyll</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, <a href="http://livereload.com/">LiveReload</a> and <a href="https://pages.github.com/">GitHub Pages</a>.</h6>
+</section>
+
+<section id="Typography" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Typography</h1>
+    <a class="color-grey" href="http://github.com">_typography.scss</a>
+  </div>
+
+  <h2>Headings</h2>
+  <div class="p2-percent b1 rounded mb3">
+    <h1>h1: A collection of written texts</h1>
+    <h2>h2: The entire works of a particular author</h2>
+    <h3>h3: A body of writing on a particular subject</h3>
+    <h4>h4: The main body or mass of a structure</h4>
+    <h5>h5: A collection of written material in machine-readable form</h5>
+    <h6 class="mb0">h6: Assembled for the purpose of studying linguistic structures, frequencies, etc.</h6>
+  </div>
+
+  <h2>Body</h2>
+  <h4>Add a class of <code>.two-columns</code> through <code>.five-columns</code> to create a multi-column layout.</h4>
+  <p class="color-grey mb3"><span class="color-accent">Note:</span> <em>All multi-column layouts default to single-column on mobile.</em></p>
+  <div class="two-columns">
+    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris <a href="#asdfa">condimentum</a> nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+
+    <p>Sed posuere consectetur est at lobortis. Fusce dapibus, <code>/.meteor/packages</code> tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+  </div>
+</section>
+
+<section id="Grid" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Grid</h1>
+    <a class="color-grey" href="http://github.com">_grid.scss</a>
+  </div>
+
+  <h2>Flexbox</h2>
+  <p class="mb4">The Corpus grid system uses <a href="http://tympanus.net/codrops/css_reference/flexbox/" target="_blank">Flexbox</a> and defaults to equal width columns.</p>
+
+  <div class="row bg-silver gutters space-between">
+    <div class="column p1 bg-white">.column</div>
+    <div class="column p1 bg-white">.column</div>
+    <div class="column p1 bg-white">.column</div>
+    <div class="column p1 bg-white">.column</div>
+    <div class="column p1 bg-white">.column</div>
+    <div class="column p1 bg-white w100">.w100</div>
+    <div class="column p1 bg-white w75">.w75</div>
+    <div class="column p1 bg-white w25">.w25</div>
+    <div class="column p1 bg-white w65">.w65</div>
+    <div class="column p1 bg-white w35">.w35</div>
+    <div class="column p1 bg-white w50">.w50</div>
+    <div class="column p1 bg-white w50">.w50</div>
+  </div>
+</section>
+
+<section id="Sizing" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Sizing</h1>
+    <a class="color-grey" href="http://github.com">_sizing.scss</a>
+  </div>
+
+  <h2>Viewport Heights</h2>
+  <p class="mb4">Viewport height utility classes include <code>.vh5</code>, <code>.vh10</code> and so on through <code>.vh100</code>.</p>
+
+  <div class="row mb4">
+    <div class="column vh10 bg-silver p1 mr3 mb3">.vh10</div>
+    <div class="column vh25 bg-silver p1">.vh25</div>
+  </div>
+
+  <h2>Percentage Heights</h2>
+  <p class="mb4">To size an element relative to it’s container, use a percentage-based height with <code>.h5</code>, <code>.h10</code> and so on through <code>.h100</code>.</p>
+
+  <div class="row vh50 bg-silver gutters mb4">
+    <div class="column h25 p1 bg-white">.h25</div>
+    <div class="column h50 p1 bg-white">.h50</div>
+  </div>
+</section>
+
+<section id="Whitespace" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Whitespace</h1>
+    <a class="color-grey" href="http://github.com">_whitespace.scss</a>
+  </div>
+
+  <p class="mb2">To add padding and margin, there are classes like <code>.m1</code>, which would be <code>margin: 1rem</code> all around. Or <code>.pt3</code>, which is <code>padding-top: 3rem;</code></p>
+  <div class="row bg-silver gutters h-auto center mb2">
+    <div class="column max-w25 bg-black"><span class="ml1 p1 bg-white">.ml1</span></div>
+    <div class="column max-w25 pl5 bg-white"><span class="ml1 p1 bg-grey">.pl5</span></span></div>
+    <div class="column max-w25 bg-black"><span class="ml1 p1 bg-white">.pl1</span></div>
+  </div>
+
+</section>
+
+<section id="Positioning" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Positioning</h1>
+    <a class="color-grey" href="http://github.com">_positioning.scss</a>
+  </div>
+
+  <p class="mb2">There are a few basic positioning utility classes</p>
+
+  <pre class="language-css no-resize mb2 no-indicator"><code>
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }</code></pre>
+
+  <p class="mb2">Also, you can add the following classes to flex items to position them within their respective containers.</p>
+  <div class="row gutters bg-silver center mb2">
+    <div class="column vh15 w30 p1 bg-white top-left">.top-left</div>
+    <div class="column vh15 w30 p1 bg-white top-center">.top-center</div>
+    <div class="column vh15 w30 p1 bg-white top-right">.top-right</div>
+
+    <div class="column vh15 w30 p1 bg-white center-left">.center-left</div>
+    <div class="column vh15 w30 p1 bg-white center">.center</div>
+    <div class="column vh15 w30 p1 bg-white center-right">.center-right</div>
+
+    <div class="column vh15 w30 p1 bg-white bottom-left">.bottom-left</div>
+    <div class="column vh15 w30 p1 bg-white bottom-center">.bottom-center</div>
+    <div class="column vh15 w30 p1 bg-white bottom-right">.bottom-right</div>
+  </div>
+
+  <p class="mb2">Alternatively, you can add any of the above classes to a parent <code>.row</code> or <code>.column</code> to align it's content.</p>
+  <div class="row bg-silver gutters h-auto center-right mb2">
+    <div class="column max-w25 p1 bg-white">Item 1</div>
+    <div class="column max-w25 p1 bg-white">Item 2</div>
+  </div>
+
+  <p class="mb2">Distribute items with <code>.space-between</code>
+  <div class="row bg-silver gutters h-auto center space-between mb2">
+    <div class="column max-w25 p1 bg-white">Item 1</div>
+    <div class="column max-w25 p1 bg-white">Item 2</div>
+  </div>
+
+  <p class="mb2">or <code>.space-around</code></p>
+  <div class="row bg-silver gutters h-auto center space-around mb2">
+    <div class="column max-w25 p1 bg-white">Item 1</div>
+    <div class="column max-w25 p1 bg-white">Item 2</div>
+  </div>
+</section>
+
+<section id="Depth" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Depth</h1>
+    <a class="color-grey" href="http://github.com">_depth.scss</a>
+  </div>
+
+  <p class="mb2">You can layer absolutely positioned elements from back to front with classes <code>depth-1</code> through <code>depth-10</code>.</p>
+  <div class="row relative vh50">
+    <div class="absolute left h75 w75 p1 b1 bg-silver border-grey depth-1">.depth-1</div>
+    <div class="absolute right h75 w75 p1 mt2 b1 bg-silver border-grey depth-2">.depth-2</div>
+    <div class="absolute bottom left h60 w60 p1 ml2 mb2 b1 bg-silver border-grey depth-8">.depth-8</div>
+    <div class="absolute bottom right h50 w50 p1 mr2 b1 bg-silver border-grey depth-10">.depth-10</div>
+  </div>
+</section>
+
+<section id="Forms" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Forms</h1>
+    <a class="color-grey" href="http://github.com">_forms.scss</a>
+  </div>
+
+  <form class="form row" method="POST">
+
+    <section class="row w100">
+      <div class="column flex1 mr2">
+        <label class="label">Radio Group</label>
+        <div class="radio-group">
+          <span class="radio-wrap">
+            <input class="input" type="radio" name="radio-options" id="Radio 1"/>
+            <label class="radio-label" for="Radio 1">Radio 1</label>
+          </span>
+
+          <span class="radio-wrap">
+            <input class="input" type="radio" name="radio-options" id="Radio 2" required/>
+            <label class="radio-label" for="Radio 2">Radio 2</label>
+          </span>
+
+          <span class="radio-wrap">
+            <input class="input" type="radio" name="radio-options" id="Radio 3"/>
+            <label class="radio-label" for="Radio 3">Radio 3</label>
+          </span>
+        </div>
+
+        <label class="label">Checkbox Group</label>
+        <div class="checkbox-group">
+          <span class="checkbox-wrap">
+            <input class="input" type="checkbox" id="Checkbox 1"/>
+            <label class="checkbox-label" for="Checkbox 1">Checkbox 1</label>
+          </span>
+
+          <span class="checkbox-wrap">
+            <input class="input" type="checkbox" id="Checkbox 2"/>
+            <label class="checkbox-label" for="Checkbox 2">Checkbox 2</label>
+          </span>
+
+          <span class="checkbox-wrap">
+            <input class="input" type="checkbox" id="Checkbox 3"/>
+            <label class="checkbox-label" for="Checkbox 3">Checkbox 3</label>
+          </span>
+        </div>
+
+        <label class="label">Stacked Checkbox Group</label>
+        <div class="checkbox-group stacked">
+          <span class="checkbox-wrap">
+            <input class="input" type="checkbox" id="Stacked Checkbox 1"/>
+            <label class="checkbox-label" for="Stacked Checkbox 1">Stacked Checkbox 1</label>
+          </span>
+
+          <span class="checkbox-wrap">
+            <input class="input" type="checkbox" id="Stacked Checkbox 2"/>
+            <label class="checkbox-label" for="Stacked Checkbox 2">Stacked Checkbox 2</label>
+          </span>
+
+          <span class="checkbox-wrap">
+            <input class="input" type="checkbox" id="Stacked Checkbox 3"/>
+            <label class="checkbox-label" for="Stacked Checkbox 3">Stacked Checkbox 3</label>
+          </span>
+        </div>
+      </div>
+
+      <div class="column flex1">
+        <fieldset class="fieldset">
+          <legend class="legend">Fieldset</legend>
+
+          <div class="input-wrap">
+            <label class="label" for="name">Text</label>
+            <input class="input" type="text" name="name" placeholder="First and Last Name" autocorrect="off" autocapitalize="on" required />
+          </div>
+
+          <div class="input-wrap">
+            <label class="label">Email</label>
+            <input class="input" type="email" autocorrect="off" autocapitalize="off" required />
+          </div>
+
+          <div class="input-wrap">
+            <label class="label" for="message">Textarea</label>
+            <textarea class="textarea" name="Message" id="message" autocorrect="on" autocapitalize="on"></textarea>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="column flex2 mr2">
+
+        <div class="input-wrap">
+        <label class="label">Select Menu</label>
+          <select class="select">
+            <option selected="selected" disabled>Sort Posts</option>
+            <option data-sort="newest">Newest</option>
+            <option data-sort="title">A-Z</option>
+            <option data-sort="stars">Most Stars</option>
+          </select>
+        </div>
+
+        <div class="input-wrap">
+          <label class="label" for="url">URL</label>
+          <input class="input" type="url" name="url" autocorrect="off" autocapitalize="off" required />
+        </div>
+
+        <div class="input-wrap">
+          <label class="label">Password</label>
+          <input class="input" type="password" name="password" autocorrect="off" autocapitalize="off" required />
+        </div>
+      </div>
+
+      <div class="column flex1">
+        <div class="input-wrap">
+          <label class="label" for="File">File</label>
+          <input class="input" type="File" name="File" novalidate/>
+        </div>
+
+        <div class="input-wrap">
+          <label class="label" for="Date">Date</label>
+          <input class="input hide-validate-icon" type="Date" name="Date"/>
+        </div>
+
+        <div class="input-wrap">
+          <label class="label">Reset</label>
+          <input class="input" type="reset" name="reset"/>
+        </div>
+
+      </div>
+    </section>
+    <section class="w100">
+      <input type="submit" value="Submit" />
+    </section>
+  </form>
+</section>
+
+<section id="Buttons" class="p3-percent">
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Buttons</h1>
+    <a class="color-grey" href="http://github.com">_buttons.scss</a>
+  </div>
+
+  <div class="row space-between">
+    <a href="#" class="btn">.btn & button</a>
+    <a href="#" class="btn btn-large">.btn-large</a>
+    <a href="#" class="btn btn-secondary">.btn-secondary</a>
+    <a href="#" class="btn btn-outline">.btn-outline</a>
+    <a href="#" class="btn btn-small">.btn-small</a>
+    <a href="#" class="btn btn-tiny">.btn-tiny</a>
+  </div>
+</section>
+
+<section id="Colors" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Colors</h1>
+    <a class="color-grey" href="http://github.com">_colors.scss</a>
+  </div>
+
+  <h2>Color</h2>
+  <div class="row bg-white b1 br0 bb0 mb3">
+    <div class="column p1 w30 br1 bb1 color-white bg-black">.color-white</div>
+    <div class="column p1 w30 br1 bb1 color-silver">.color-silver</div>
+    <div class="column p1 w30 br1 bb1 color-lightgrey">.color-lightgrey</div>
+    <div class="column p1 w30 br1 bb1 color-grey">.color-grey</div>
+    <div class="column p1 w30 br1 bb1 color-midgrey">.color-midgrey</div>
+    <div class="column p1 w30 br1 bb1 color-darkgrey">.color-darkgrey</div>
+    <div class="column p1 w30 br1 bb1 color-black">.color-black</div>
+    <div class="column p1 w30 br1 bb1 color-trueblack">.color-trueblack</div>
+    <div class="column p1 w30 br1 bb1 color-accent">.color-accent</div>
+  </div>
+
+  <h2>Background Color</h2>
+  <div class="row b1 mb3">
+    <div class="column p1 w30 bg-white">.bg-white</div>
+    <div class="column p1 w30 bg-silver">.bg-silver</div>
+    <div class="column p1 w30 bg-lightgrey">.bg-lightgrey</div>
+    <div class="column p1 w30 bg-grey">.bg-grey</div>
+    <div class="column p1 w30 bg-midgrey color-white">.bg-midgrey</div>
+    <div class="column p1 w30 bg-darkgrey color-white">.bg-darkgrey</div>
+    <div class="column p1 w30 bg-black color-white">.bg-black</div>
+    <div class="column p1 w30 bg-trueblack color-white">.bg-trueblack</div>
+    <div class="column p1 w30 bg-accent color-white">.bg-accent</div>
+  </div>
+
+  <h2>Border Color</h2>
+  <div class="row b1 mb3">
+    <div class="column p1 bb3 w30 border-white">.border-white</div>
+    <div class="column p1 bb3 w30 border-silver">.border-silver</div>
+    <div class="column p1 bb3 w30 border-lightgrey">.border-lightgrey</div>
+    <div class="column p1 bb3 w30 border-grey">.border-grey</div>
+    <div class="column p1 bb3 w30 border-midgrey">.border-midgrey</div>
+    <div class="column p1 bb3 w30 border-darkgrey">.border-darkgrey</div>
+    <div class="column p1 bb3 w30 border-black">.border-black</div>
+    <div class="column p1 bb3 w30 border-trueblack">.border-trueblack</div>
+    <div class="column p1 bb3 w30 border-accent">.border-accent</div>
+  </div>
+
+</section>
+
+<section id="Borders" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Borders</h1>
+    <a class="color-grey" href="http://github.com">_borders.scss</a>
+  </div>
+
+  <p class="mb2">Add a <code>1px</code> border with the shorthand class <code>.b1</code>. For specific sides and widths, use the same convention, i.e. <code>.br2</code> for a right border 2px thick, or <code>.bt3</code> for a top border of 3px. Change the color with <code>border-accent</code> with the desired color.</p>
+  <div class="row bg-silver gutters h-auto center-right mb2">
+    <div class="column bg-white border-black max-w25 p2 b1">.b1</div>
+    <div class="column bg-white border-accent max-w25 p2 br2">.br2</div>
+    <div class="column bg-white border-grey max-w25 p2 bb3">.bb3</div>
+    <div class="column bg-white border-black max-w25 p2 bl1">.bl1</div>
+  </div>
+
+</section>
+
+<section id="Images" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Images</h1>
+    <a class="color-grey" href="http://github.com">_Images.scss</a>
+  </div>
+
+</section>
+
+<section id="Syntax" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Syntax</h1>
+    <a class="color-grey" href="http://github.com">_syntax.scss</a>
+  </div>
+
+  <h2 class="color-darkgrey"><a href="http://prismjs.com/">Prism.js</a> with <a href="http://jamiewilson.io/predawn">Predawn</a></h2>
+  <p class="mb3">Wrap your code blocks with <code>&lt;pre&gt;&lt;code&gt;</code> tags and Prism will guess what lanuage it is and add the appropriate class. Or, manually add a class of <code><a href="http://prismjs.com/#languages-list">language-*</a></code> to ensure the proper syntax. For numbering, add the class <code>line-numbers</code>.</p>
+  <div class="row mb3">
+    <div class="column vh5 flex1 bg-paleblue"></div>
+    <div class="column vh5 flex1 bg-blue"></div>
+    <div class="column vh5 flex1 bg-slate"></div>
+    <div class="column vh5 flex1 bg-palegreen"></div>
+    <div class="column vh5 flex1 bg-green"></div>
+    <div class="column vh5 flex1 bg-darkgreen"></div>
+    <div class="column vh5 flex1 bg-paleyellow"></div>
+    <div class="column vh5 flex1 bg-yellow"></div>
+    <div class="column vh5 flex1 bg-orange"></div>
+    <div class="column vh5 flex1 bg-red"></div>
+    <div class="column vh5 flex1 bg-darkred"></div>
+    <div class="column vh5 flex1 bg-maroon"></div>
+  </div>
+
+<h3>How to enable highlighting</h3>
+<pre class="language-markup line-numbers mb2"><code>
+&lt;pre class=&quot;language-markup line-numbers&quot;&gt;&lt;code&gt;
+  &lt;!-- Your code content here. Likely you&#039;ll need to encode any html enitities. --&gt;
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+<h3>Example of markup highlighting</h3>
+
+<pre class="language-markup line-numbers"><code>&lt;p class=&quot;mb2&quot;&gt;Distribute items with &lt;code&gt;.space-between&lt;/code&gt;
+&lt;div class=&quot;row gutters h-auto bg-white center space-between relative mb2&quot;&gt;
+  &lt;div class=&quot;column max-quarter-width p1 bg-silver&quot;&gt;Item 1&lt;/div&gt;
+  &lt;div class=&quot;column max-quarter-width p1 bg-silver&quot;&gt;Item 2&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</section>
+
+<section id="Breakpoints" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Breakpoints</h1>
+    <a class="color-grey" href="http://github.com">_breakpoints.scss</a>
+  </div>
+
+<h3>Corpus comes with two breakpoint mixins, small and large:</h3>
+<pre class="language-scss line-numbers mb2"><code>
+@mixin small() {
+  @media screen and (max-width: $small-break) {
+    @content;
+  }
+}
+
+@mixin large() {
+  @media screen and (min-width: $small-break) {
+    @content;
+  }
+}</code></pre>
+
+<h3>Use them like so…</h3>
+<pre class="language-scss line-numbers mb2"><code>// If sidebar exists, offset &lt;main&gt; by $sidebar-width
+.sidebar + main {
+  margin-left: $sidebar-width;
+  @include small {
+    margin-left: 0;
+  }
+}</code></pre>
+
+</section>
+
+<section id="Utilities" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Utilities</h1>
+    <a class="color-grey" href="http://github.com">_Utilities.scss</a>
+  </div>
+
+</section>
+
+<section id="Animation" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Animation</h1>
+    <a class="color-grey" href="http://github.com">_Animation.scss</a>
+  </div>
+
+</section>
+
+<section id="Variables" class="p3-percent">
+
+  <div class="section-header row space-between align-baseline">
+    <h1 class="m0">Variables</h1>
+    <a class="color-grey" href="http://github.com">_variables.scss</a>
+  </div>
+
+<h3>Customize this file for your current project</h3>
+<pre class="language-scss line-numbers mb2"><code>
+//====================================================
+//  _reset.scss
+//====================================================
+
+@font-face { font-family: 'Office Code Pro'; src: url('../fonts/OfficeCodePro-Regular.woff'); }
+$base-font: 'Helvetica Neue', Helvetica, sans-serif;
+$mono-font: 'Office Code Pro', Monaco, Consolas, monospace;
+$base-line-height: 1.6;
+
+//====================================================
+//  _sidebar.scss
+//====================================================
+
+$sidebar-width: 300px;
+
+//====================================================
+//  _colors.scss
+//====================================================
+
+$accent:    #F18260;
+$white:     #fff;
+$silver:    #F4F4F4;
+$lightgrey: #ececec;
+$grey:      #ccc;
+$midgrey:   #777;
+$darkgrey:  #444;
+$black:     #222;
+$trueblack: #000;
+
+//====================================================
+//  _syntax.scss
+//====================================================
+
+// Cools
+$paleblue:   #BDDCDC;
+$blue:       #92BFBF;
+$slate:      #5F777E;
+$palegreen:  #D0EDA7;
+$green:      #B4D388;
+$darkgreen:  #809161;
+
+// Warms
+$paleyellow: #F5F5AE;
+$yellow:     #EDE480;
+$orange:     #F49D62;
+$red:        #CF5340;
+$darkred:    #893121;
+$maroon:     #55201B;
+
+//====================================================
+//  _whitespace.scss
+//====================================================
+
+$padding-percent: 2%;
+$padding-fixed:   1rem;
+$margin-percent:  2%;
+$margin-fixed:    1rem;
+
+//====================================================
+//  _borders.scss
+//====================================================
+
+$border-style: solid;
+$border-color: rgba(0,0,0,0.1);
+$border-radius: 3px !default;
+
+$border-1: 1px;
+$border-2: 2px;
+$border-3: 3px;
+
+//====================================================
+//  _breakpoints.scss
+//====================================================
+
+$small-break: 50em;</code></pre>
+
+
+</section>
+
+
+    </main>
+
+  <script src="/scripts/prism.js"></script>
+
+  </body>
+</html>
