@@ -42,13 +42,21 @@
   from { transform: translateX(-25vh); }
   to   { transform: translateX(0); }}
 
-@keyframes flip {
-  from { transform: scaleY(0); }
-  to   { transform: scaleY(1); }}
+@keyframes flipIn {
+  from { opacity: 0; transform: scaleY(0); }
+  to   { opacity: 1; transform: scaleY(1); }}
 
-@keyframes rotate {
+@keyframes flipOut {
+  from { opacity: 1; transform: scaleY(1); }
+  to   { opacity: 0; transform: scaleY(0); }}
+
+@keyframes rotateRight {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }}
+
+@keyframes rotateLeft {
+  from { transform: rotate(360deg); }
+  to   { transform: rotate(0deg); }}
 
 @keyframes flash {
   from { opacity: 1; }
@@ -82,11 +90,11 @@
 .scaleUp     { animation: scaleUp 200ms ease-in-out; }
 .scaleDown   { animation: scaleDown 200ms ease-in-out; }
 
-.flipIn      { animation: flip 200ms cubic-bezier(0.5, -0.5, 0.5, 1.5) forwards, fadeIn 400ms forwards; }
-.flipOut     { animation: flip 200ms cubic-bezier(0.5, -0.5, 0.5, 1.5) backwards, fadeIn 400ms backwards; }
+.flipIn      { animation: flipIn 200ms cubic-bezier(0.5, -0.5, 0.5, 1.5) }
+.flipOut     { animation: flipOut 200ms cubic-bezier(0.5, -0.5, 0.5, 1.5) }
 
-.rotateRight { animation: rotate 500ms; }
-.rotateLeft  { animation: rotate 500ms backwards; }
+.rotateRight { animation: rotateRight 500ms; }
+.rotateLeft  { animation: rotateLeft 500ms; }
 
-.flash       { animation: flash 500ms; }
-.shake       { animation: wobble 200ms; }
+.flash       { animation: flash 500ms 3; }
+.shake       { animation: shake 200ms; }

@@ -13,6 +13,10 @@
 .overflow-scroll { overflow: scroll; }
 .overflow-auto   { overflow: auto; }
 
+.hide-on-small  { @include small { display: none !important; }}
+.hide-on-medium { @include medium { display: none !important; }}
+.hide-on-large  { @include large { display: none !important; }}
+
 //====================================================
 //  Text wrap
 //====================================================
@@ -51,6 +55,10 @@
 //====================================================
 //  Misc.
 //====================================================
+
+.cursor-pointer {
+  cursor: pointer;
+}
 
 .no-pointer-events {
   pointer-events: none;

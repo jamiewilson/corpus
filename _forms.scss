@@ -63,6 +63,7 @@
 .input.novalidate,
 .input.hide-validate-icon {
   background-image: none;
+  padding-right: $padding-fixed;
 }
 
 .input-wrap,
@@ -104,6 +105,16 @@
 .stacked .radio-wrap:not(:last-child),
 .stacked .checkbox-wrap:not(:last-child) {
   display: block;
+}
+
+//====================================================
+//  Inline input group
+//====================================================
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 //====================================================

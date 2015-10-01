@@ -18,7 +18,3 @@ $medium-break: 800px !default;
     @content;
   }
 }
-
-.hide-on-small  { @include small { display: none !important; }}
-.hide-on-medium { @include medium { display: none !important; }}
-.hide-on-large  { @include large { display: none !important; }}

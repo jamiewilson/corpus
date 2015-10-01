@@ -5,17 +5,17 @@
 //====================================================
 
 @font-face { font-family: 'Office Code Pro'; src: url('../fonts/OfficeCodePro-Regular.woff'); }
-$base-font: 'Helvetica Neue', Helvetica, sans-serif !default;
-$mono-font: 'Office Code Pro', Monaco, Consolas, monospace !default;
-$base-font-size: 1rem !default;
-$base-line-height: 1.6 !default;
+$base-font: 'Helvetica Neue', Helvetica, sans-serif;
+$mono-font: 'Office Code Pro', Monaco, Consolas, monospace;
+$base-font-size: 1rem;
+$base-line-height: 1.6;
 
-$h1: $base-font-size * 2.25 !default;
-$h2: $base-font-size * 1.75 !default;
-$h3: $base-font-size * 1.5 !default;
-$h4: $base-font-size * 1.25 !default;
-$h5: $base-font-size * 1.125 !default;
-$h6: $base-font-size !default;
+$h1: $base-font-size * 2.25;
+$h2: $base-font-size * 1.75t;
+$h3: $base-font-size * 1.5;
+$h4: $base-font-size * 1.25;
+$h5: $base-font-size * 1.125;
+$h6: $base-font-size;
 
 //====================================================
 //  _sizing.scss
@@ -78,7 +78,7 @@ $margin-fixed:    1rem;
 
 $border-style: solid;
 $border-color: rgba(0,0,0,0.1);
-$border-radius: 3px !default;
+$border-radius: 3px;
 
 $border-1: 1px;
 $border-2: 2px;

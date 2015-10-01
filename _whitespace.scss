@@ -54,9 +54,28 @@ $margin-fixed:    1rem !default;
 .pl4 { padding-left: $padding-fixed * 4; }
 .pl5 { padding-left: $padding-fixed * 5; }
 
+// Top-Bottom
+.ptb0 { padding-top: 0; padding-bottom: 0; }
+.ptb1 { padding-top: $padding-fixed; padding-bottom: $padding-fixed; }
+.ptb2 { padding-top: $padding-fixed * 2; padding-bottom: $padding-fixed * 2; }
+.ptb3 { padding-top: $padding-fixed * 3; padding-bottom: $padding-fixed * 3; }
+.ptb4 { padding-top: $padding-fixed * 4; padding-bottom: $padding-fixed * 4; }
+.ptb5 { padding-top: $padding-fixed * 5; padding-bottom: $padding-fixed * 5; }
+
+// Left-Right
+.plr0 { padding-left: 0; padding-right: 0; }
+.plr1 { padding-left: $padding-fixed; padding-right: $padding-fixed; }
+.plr2 { padding-left: $padding-fixed * 2; padding-right: $padding-fixed * 2; }
+.plr3 { padding-left: $padding-fixed * 3; padding-right: $padding-fixed * 3; }
+.plr4 { padding-left: $padding-fixed * 4; padding-right: $padding-fixed * 4; }
+.plr5 { padding-left: $padding-fixed * 5; padding-right: $padding-fixed * 5; }
+
 //====================================================
 //  Margins
 //====================================================
+
+// Auto
+.ma  { margin: auto; }
 
 // Percentage Margin
 .m1-percent { margin: $margin-percent; }
@@ -105,5 +124,18 @@ $margin-fixed:    1rem !default;
 .ml4 { margin-left: $margin-fixed * 4; }
 .ml5 { margin-left: $margin-fixed * 5; }
 
-// Auto
-.ma  { margin: auto; }
+// Top/Bottom
+.mtb0 { margin-top: 0; margin-bottom: 0; }
+.mtb1 { margin-top: $margin-fixed; margin-bottom: $margin-fixed; }
+.mtb2 { margin-top: $margin-fixed * 2; margin-bottom: $margin-fixed * 2; }
+.mtb3 { margin-top: $margin-fixed * 3; margin-bottom: $margin-fixed * 3; }
+.mtb4 { margin-top: $margin-fixed * 4; margin-bottom: $margin-fixed * 4; }
+.mtb5 { margin-top: $margin-fixed * 5; margin-bottom: $margin-fixed * 5; }
+
+// Left/Right
+.mlr0 { margin-left: 0; margin-right: 0; }
+.mlr1 { margin-left: $margin-fixed; margin-right: $margin-fixed; }
+.mlr2 { margin-left: $margin-fixed * 2; margin-right: $margin-fixed * 2; }
+.mlr3 { margin-left: $margin-fixed * 3; margin-right: $margin-fixed * 3; }
+.mlr4 { margin-left: $margin-fixed * 4; margin-right: $margin-fixed * 4; }
+.mlr5 { margin-left: $margin-fixed * 5; margin-right: $margin-fixed * 5; }
