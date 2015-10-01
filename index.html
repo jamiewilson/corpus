@@ -2,7 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Corpus. A collection of CSS things.</title>
@@ -10,48 +9,54 @@
 
   <link rel="stylesheet" href="/css/corpus.css">
   <link rel="canonical" href="http://corpuscss.com/">
-  <link rel="alternate" type="application/rss+xml" title="Corpus." href="http://corpuscss.com/feed.xml" />
 </head>
 
   <body class="row fullscreen">
 
     <nav class="sidebar bg-black p2 h100 fixed scroll-vertical no-scrollbar">
-  <h1 class="m0 color-white"><a class="no-underline" href="/">Corpus</a></h1>
+  <h1 class="m0 color-white"><a class="no-underline" href="/">Corpus</a><span class="alpha-badge fs-small italic color-accent">Alpha</span></h1>
   <p class="color-midgrey">A collection of CSS things.</p>
   <ul class="list-style-none lh9 bt1 border-darkgrey mt2 pt2">
-    <li><a href="#Intro">Intro</a></li>
-    <li><a href="#Typography">Typography</a></li>
-    <li><a href="#Grid">Grid</a></li>
-    <li><a href="#Sizing">Sizing</a></li>
-    <li><a href="#Whitespace">Whitespace</a></li>
-    <li><a href="#Positioning">Positioning</a></li>
-    <li><a href="#Depth">Depth</a></li>
-    <li><a href="#Forms">Forms</a></li>
-    <li><a href="#Buttons">Buttons</a></li>
-    <li><a href="#Colors">Colors</a></li>
-    <li><a href="#Borders">Borders</a></li>
-    <li><a href="#Images">Images</a></li>
-    <li><a href="#Syntax">Syntax</a></li>
-    <li><a href="#Breakpoints">Breakpoints</a></li>
-    <li><a href="#Utilities">Utilities</a></li>
-    <li><a href="#Animation">Animation</a></li>
-    <li><a href="#Variables">Variables</a></li>
+    <li><a href="#intro">Intro</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#grid">Grid</a></li>
+    <li><a href="#sizing">Sizing</a></li>
+    <li><a href="#whitespace">Whitespace</a></li>
+    <li><a href="#positioning">Positioning</a></li>
+    <li><a href="#depth">Depth</a></li>
+    <li><a href="#forms">Forms</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#borders">Borders</a></li>
+    <li><a href="#images">Images</a></li>
+    <li><a href="#syntax">Syntax</a></li>
+    <li><a href="#breakpoints">Breakpoints</a></li>
+    <li><a href="#utilities">Utilities</a></li>
+    <li><a href="#animation">Animation</a></li>
+    <li><a href="#variables">Variables</a></li>
   </ul>
 </nav>
 
     <main class="column overflow-hidden fadeIn">
-      <section id="Intro" class="p3-percent bg-lightgrey">
+      <section id="intro" class="p3-percent bg-lightgrey">
   <h1 class="section-header">Intro</h1>
-  <h3 class="mb4">Corpus is yet another CSS toolkit. It’s basically a collection of the things I find <a href="http://jamiewilson.io">myself</a> returning to for each new project. It uses <a href="http://tympanus.net/codrops/css_reference/flexbox/">Flexbox</a> for the grid system, <a href="http://bitsofco.de/2015/viewport-vs-percentage-units/">viewport-based heights and percentage-based widths</a>, is heavily influenced by Basscss’s <a href="http://www.basscss.com/docs/white-space/">White Space</a> module, and has a few useful greyscale color utilities. For syntax highlighting I'm using <a href="http://prismjs.com/">Prism.js</a> and my own <a href="https://packagecontrol.io/packages/Predawn">Predawn</a> color scheme, with code set in <a href="https://github.com/nathco/Office-Code-Pro">Office Code Pro</a>. Styles are written in SCSS.</h3>
-  <h6 class="color-grey italic">In addition to Corpus, this site was built with <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="http://jekyllrb.com/">Jekyll</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, <a href="http://livereload.com/">LiveReload</a> and <a href="https://pages.github.com/">GitHub Pages</a>.</h6>
+  <h3 class="mb2">Corpus is yet another CSS toolkit. It’s basically a collection of the things I find <a href="http://jamiewilson.io">myself</a> returning to for each new project. It uses <a href="http://tympanus.net/codrops/css_reference/flexbox/">Flexbox</a> for the grid system, <a href="http://bitsofco.de/2015/viewport-vs-percentage-units/">viewport-based heights and percentage-based widths</a>, is heavily influenced by Basscss’s <a href="http://www.basscss.com/docs/white-space/">White Space</a> module, and has a few useful greyscale color utilities. For syntax highlighting I'm using <a href="http://prismjs.com/">Prism.js</a> and my own <a href="https://packagecontrol.io/packages/Predawn">Predawn</a> color scheme, with code set in <a href="https://github.com/nathco/Office-Code-Pro">Office Code Pro</a>. Styles are written in SCSS.</h3>
+
+  <a class="btn mb4" href="https://github.com/jamiewilson/corpus">Download on GitHub</a>
+
+  <h6 class="color-grey italic m0">In addition to Corpus, this site was built with <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="http://jekyllrb.com/">Jekyll</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, <a href="http://livereload.com/">LiveReload</a>, <a href="http://uilang.com/">uilang</a> and <a href="https://pages.github.com/">GitHub Pages</a>.</h6>
+
+
 </section>
 
-<section id="Typography" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Typography</h1>
-    <a class="color-grey" href="http://github.com">_typography.scss</a>
-  </div>
+
+<section id="typography" class="p3-percent">
+
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_typography.scss">
+    <h1 class="m0 capitalize">typography</h1>
+    <span class="color-grey">_typography.scss</span>
+  </a>
 
   <h2>Headings</h2>
   <div class="p2-percent b1 rounded mb3">
@@ -73,15 +78,16 @@
   </div>
 </section>
 
-<section id="Grid" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Grid</h1>
-    <a class="color-grey" href="http://github.com">_grid.scss</a>
-  </div>
+
+<section id="grid" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_grid.scss">
+    <h1 class="m0 capitalize">grid</h1>
+    <span class="color-grey">_grid.scss</span>
+  </a>
 
   <h2>Flexbox</h2>
-  <p class="mb4">The Corpus grid system uses <a href="http://tympanus.net/codrops/css_reference/flexbox/" target="_blank">Flexbox</a> and defaults to equal width columns.</p>
+  <p class="mb4">The Corpus grid system uses <a href="http://tympanus.net/codrops/css_reference/flexbox/" target="_blank">Flexbox</a> and defaults to equal width columns. Add gutters to to any <code>.row</code> or <code>.column</code> parent container by adding the class <code>.gutters</code> </p>
 
   <div class="row bg-silver gutters space-between">
     <div class="column p1 bg-white">.column</div>
@@ -99,11 +105,20 @@
   </div>
 </section>
 
-<section id="Sizing" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Sizing</h1>
-    <a class="color-grey" href="http://github.com">_sizing.scss</a>
+
+<section id="sizing" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_sizing.scss">
+    <h1 class="m0 capitalize">sizing</h1>
+    <span class="color-grey">_sizing.scss</span>
+  </a>
+
+  <h2>Percentage Widths</h2>
+  <p class="mb4">Because flex items defualt to filling their parent container equally, you can use, for example, a <code>.max-w25</code> class to offset create offset layouts.</p>
+
+  <div class="row bg-silver gutters mb4">
+    <div class="column p1 bg-white">.column</div>
+    <div class="column max-w25 p1 bg-white">.max-w25</div>
   </div>
 
   <h2>Viewport Heights</h2>
@@ -123,28 +138,30 @@
   </div>
 </section>
 
-<section id="Whitespace" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Whitespace</h1>
-    <a class="color-grey" href="http://github.com">_whitespace.scss</a>
-  </div>
+
+<section id="whitespace" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_whitespace.scss">
+    <h1 class="m0 capitalize">whitespace</h1>
+    <span class="color-grey">_whitespace.scss</span>
+  </a>
 
   <p class="mb2">To add padding and margin, there are classes like <code>.m1</code>, which would be <code>margin: 1rem</code> all around. Or <code>.pt3</code>, which is <code>padding-top: 3rem;</code></p>
   <div class="row bg-silver gutters h-auto center mb2">
-    <div class="column max-w25 bg-black"><span class="ml1 p1 bg-white">.ml1</span></div>
-    <div class="column max-w25 pl5 bg-white"><span class="ml1 p1 bg-grey">.pl5</span></span></div>
-    <div class="column max-w25 bg-black"><span class="ml1 p1 bg-white">.pl1</span></div>
+    <div class="column margin-color"><span class="mlr1 p2 box-color">.mlr1 .p2</span></span></div>
+    <div class="column margin-color"><span class="ml2 p1 box-color">.ml2 .p1</span></div>
+    <div class="column margin-color"><span class="ptb3 box-color">.ptb3</span></div>
   </div>
 
 </section>
 
-<section id="Positioning" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Positioning</h1>
-    <a class="color-grey" href="http://github.com">_positioning.scss</a>
-  </div>
+
+<section id="positioning" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_positioning.scss">
+    <h1 class="m0 capitalize">positioning</h1>
+    <span class="color-grey">_positioning.scss</span>
+  </a>
 
   <p class="mb2">There are a few basic positioning utility classes</p>
 
@@ -187,12 +204,13 @@
   </div>
 </section>
 
-<section id="Depth" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Depth</h1>
-    <a class="color-grey" href="http://github.com">_depth.scss</a>
-  </div>
+
+<section id="depth" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_depth.scss">
+    <h1 class="m0 capitalize">depth</h1>
+    <span class="color-grey">_depth.scss</span>
+  </a>
 
   <p class="mb2">You can layer absolutely positioned elements from back to front with classes <code>depth-1</code> through <code>depth-10</code>.</p>
   <div class="row relative vh50">
@@ -203,12 +221,13 @@
   </div>
 </section>
 
-<section id="Forms" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Forms</h1>
-    <a class="color-grey" href="http://github.com">_forms.scss</a>
-  </div>
+
+<section id="forms" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_forms.scss">
+    <h1 class="m0 capitalize">forms</h1>
+    <span class="color-grey">_forms.scss</span>
+  </a>
 
   <form class="form row" method="POST">
 
@@ -339,28 +358,30 @@
   </form>
 </section>
 
-<section id="Buttons" class="p3-percent">
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Buttons</h1>
-    <a class="color-grey" href="http://github.com">_buttons.scss</a>
-  </div>
 
+
+<section id="buttons" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_buttons.scss">
+    <h1 class="m0 capitalize">buttons</h1>
+    <span class="color-grey">_buttons.scss</span>
+  </a>
   <div class="row space-between">
-    <a href="#" class="btn">.btn & button</a>
-    <a href="#" class="btn btn-large">.btn-large</a>
-    <a href="#" class="btn btn-secondary">.btn-secondary</a>
-    <a href="#" class="btn btn-outline">.btn-outline</a>
-    <a href="#" class="btn btn-small">.btn-small</a>
-    <a href="#" class="btn btn-tiny">.btn-tiny</a>
+    <a href="#" class="mb1 btn">.btn & button</a>
+    <a href="#" class="mb1 btn btn-large">.btn-large</a>
+    <a href="#" class="mb1 btn btn-secondary">.btn-secondary</a>
+    <a href="#" class="mb1 btn btn-outline">.btn-outline</a>
+    <a href="#" class="mb1 btn btn-small">.btn-small</a>
+    <a href="#" class="mb1 btn btn-tiny">.btn-tiny</a>
   </div>
 </section>
 
-<section id="Colors" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Colors</h1>
-    <a class="color-grey" href="http://github.com">_colors.scss</a>
-  </div>
+
+<section id="colors" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_colors.scss">
+    <h1 class="m0 capitalize">colors</h1>
+    <span class="color-grey">_colors.scss</span>
+  </a>
 
   <h2>Color</h2>
   <div class="row bg-white b1 br0 bb0 mb3">
@@ -403,12 +424,14 @@
 
 </section>
 
-<section id="Borders" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Borders</h1>
-    <a class="color-grey" href="http://github.com">_borders.scss</a>
-  </div>
+
+<section id="borders" class="p3-percent">
+
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_borders.scss">
+    <h1 class="m0 capitalize">borders</h1>
+    <span class="color-grey">_borders.scss</span>
+  </a>
 
   <p class="mb2">Add a <code>1px</code> border with the shorthand class <code>.b1</code>. For specific sides and widths, use the same convention, i.e. <code>.br2</code> for a right border 2px thick, or <code>.bt3</code> for a top border of 3px. Change the color with <code>border-accent</code> with the desired color.</p>
   <div class="row bg-silver gutters h-auto center-right mb2">
@@ -420,24 +443,50 @@
 
 </section>
 
-<section id="Images" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Images</h1>
-    <a class="color-grey" href="http://github.com">_Images.scss</a>
-  </div>
+
+<section id="images" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_images.scss">
+    <h1 class="m0 capitalize">images</h1>
+    <span class="color-grey">_images.scss</span>
+  </a>
+
+<h3>For both background and inline images, Corpus provides a few utility classes for sizing, postitioning and attachment.</h3>
+<pre class="language-scss line-numbers mb2"><code>
+//====================================================
+//  Background/Image Size & Position
+//====================================================
+
+.bg-no-repeat { background-repeat: no-repeat; }
+.bg-cover     { background-size: cover; }
+.bg-contain   { background-size: contain; }
+.bg-center    { background-position: center; }
+.bg-top       { background-position: top; }
+.bg-right     { background-position: right; }
+.bg-bottom    { background-position: bottom; }
+.bg-left      { background-position: left; }
+
+.bg-fixed     { background-attachment: fixed; }
+.bg-local     { background-attachment: local; }
+
+.img-cover      { object-fit: cover; }
+.img-contain    { object-fit: contain; }
+.img-fill       { object-fit: fill; }
+.img-scale-down { object-fit: scale-down; }</code></pre>
 
 </section>
 
-<section id="Syntax" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Syntax</h1>
-    <a class="color-grey" href="http://github.com">_syntax.scss</a>
-  </div>
+
+
+<section id="syntax" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_syntax.scss">
+    <h1 class="m0 capitalize">syntax</h1>
+    <span class="color-grey">_syntax.scss</span>
+  </a>
 
   <h2 class="color-darkgrey"><a href="http://prismjs.com/">Prism.js</a> with <a href="http://jamiewilson.io/predawn">Predawn</a></h2>
-  <p class="mb3">Wrap your code blocks with <code>&lt;pre&gt;&lt;code&gt;</code> tags and Prism will guess what lanuage it is and add the appropriate class. Or, manually add a class of <code><a href="http://prismjs.com/#languages-list">language-*</a></code> to ensure the proper syntax. For numbering, add the class <code>line-numbers</code>.</p>
+  <p class="mb3">Wrap your code blocks with <code>&lt;pre&gt;&lt;code&gt;</code> tags and Prism will guess what language it is and add the appropriate class. Or, manually add a class of <code><a href="http://prismjs.com/#languages-list">language-*</a></code> to ensure the proper syntax. For numbering, add the class <code>line-numbers</code>.</p>
   <div class="row mb3">
     <div class="column vh5 flex1 bg-paleblue"></div>
     <div class="column vh5 flex1 bg-blue"></div>
@@ -468,17 +517,27 @@
 &lt;/div&gt;</code></pre>
 </section>
 
-<section id="Breakpoints" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Breakpoints</h1>
-    <a class="color-grey" href="http://github.com">_breakpoints.scss</a>
-  </div>
 
-<h3>Corpus comes with two breakpoint mixins, small and large:</h3>
+<section id="breakpoints" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_breakpoints.scss">
+    <h1 class="m0 capitalize">breakpoints</h1>
+    <span class="color-grey">_breakpoints.scss</span>
+  </a>
+
+<h3>Corpus comes with three breakpoint mixins: small, medium and large:</h3>
 <pre class="language-scss line-numbers mb2"><code>
+$small-break: 480px !default;
+$medium-break: 800px !default;
+
 @mixin small() {
   @media screen and (max-width: $small-break) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media screen and (max-width: $medium-break) {
     @content;
   }
 }
@@ -489,7 +548,7 @@
   }
 }</code></pre>
 
-<h3>Use them like so…</h3>
+<h3>You can use them like so…</h3>
 <pre class="language-scss line-numbers mb2"><code>// If sidebar exists, offset &lt;main&gt; by $sidebar-width
 .sidebar + main {
   margin-left: $sidebar-width;
@@ -500,41 +559,182 @@
 
 </section>
 
-<section id="Utilities" class="p3-percent">
 
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Utilities</h1>
-    <a class="color-grey" href="http://github.com">_Utilities.scss</a>
-  </div>
 
-</section>
+<section id="utilities" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_utilities.scss">
+    <h1 class="m0 capitalize">utilities</h1>
+    <span class="color-grey">_utilities.scss</span>
+  </a>
 
-<section id="Animation" class="p3-percent">
-
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Animation</h1>
-    <a class="color-grey" href="http://github.com">_Animation.scss</a>
-  </div>
-
-</section>
-
-<section id="Variables" class="p3-percent">
-
-  <div class="section-header row space-between align-baseline">
-    <h1 class="m0">Variables</h1>
-    <a class="color-grey" href="http://github.com">_variables.scss</a>
-  </div>
-
-<h3>Customize this file for your current project</h3>
 <pre class="language-scss line-numbers mb2"><code>
 //====================================================
-//  _reset.scss
+//  Display
+//====================================================
+
+.hidden       { display: none; }
+.block        { display: block; }
+.flex         { display: flex; }
+.inline       { display: inline; }
+.inline-block { display: inline-block; }
+.inline-flex  { display: inline-flex; }
+
+.overflow-hidden { overflow: hidden; }
+.overflow-scroll { overflow: scroll; }
+.overflow-auto   { overflow: auto; }
+
+.hide-on-small  { @include small { display: none !important; }}
+.hide-on-medium { @include medium { display: none !important; }}
+.hide-on-large  { @include large { display: none !important; }}
+
+//====================================================
+//  Text wrap
+//====================================================
+
+.pre       { white-space: pre; }
+.nowrap    { white-space: nowrap; }
+
+//====================================================
+//  Scrolling
+//====================================================
+
+.scroll-horizontal {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.scroll-vertical {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+//====================================================
+//  Textareas
+//====================================================
+
+.resize-none       { resize: none; }
+.resize-vertical   { resize: vertical; }
+.resize-horizontal { resize: horizontal; }
+
+//====================================================
+//  Misc.
+//====================================================
+
+.no-pointer-events {
+  pointer-events: none;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}</code></pre>
+
+</section>
+
+
+
+<section id="animation" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_animation.scss">
+    <h1 class="m0 capitalize">animation</h1>
+    <span class="color-grey">_animation.scss</span>
+  </a>
+
+<h2>Keyframe animations with corresponding classes</h2>
+<p class="mb3">Click on each box below to see the animation</p>
+
+  <div class="row bg-silver gutters space-between">
+    <div class="column p1 w30 bg-white cursor-pointer fadeIn-demo">fadeIn</div>
+    <div class="column p1 w30 bg-white cursor-pointer fadeOut-demo">fadeOut</div>
+    <div class="column p1 w30 bg-white cursor-pointer fadeInUp-demo">fadeInUp</div>
+    <div class="column p1 w30 bg-white cursor-pointer fadeInDown-demo">fadeInDown</div>
+    <div class="column p1 w30 bg-white cursor-pointer scaleUp-demo">scaleUp</div>
+    <div class="column p1 w30 bg-white cursor-pointer scaleDown-demo">scaleDown</div>
+    <div class="column p1 w30 bg-white cursor-pointer slideUp-demo">slideUp</div>
+    <div class="column p1 w30 bg-white cursor-pointer slideDown-demo">slideDown</div>
+    <div class="column p1 w30 bg-white cursor-pointer slideLeft-demo">slideLeft</div>
+    <div class="column p1 w30 bg-white cursor-pointer slideRight-demo">slideRight</div>
+    <div class="column p1 w30 bg-white cursor-pointer flipIn-demo">flipIn</div>
+    <div class="column p1 w30 bg-white cursor-pointer rotateRight-demo">rotateRight</div>
+    <div class="column p1 w30 bg-white cursor-pointer rotateLeft-demo">rotateLeft</div>
+    <div class="column p1 w30 bg-white cursor-pointer flash-demo">flash</div>
+    <div class="column p1 w30 bg-white cursor-pointer shake-demo">shake</div>
+  </div>
+
+<code>
+  clicking on ".fadeIn-demo" toggles class "fadeIn" on ".fadeIn-demo"
+  clicking on ".fadeOut-demo" toggles class "fadeOut" on ".fadeOut-demo"
+  clicking on ".fadeInUp-demo" toggles class "fadeInUp" on ".fadeInUp-demo"
+  clicking on ".fadeInDown-demo" toggles class "fadeInDown" on ".fadeInDown-demo"
+  clicking on ".scaleUp-demo" toggles class "scaleUp" on ".scaleUp-demo"
+  clicking on ".scaleDown-demo" toggles class "scaleDown" on ".scaleDown-demo"
+  clicking on ".slideUp-demo" toggles class "slideUp" on ".slideUp-demo"
+  clicking on ".slideDown-demo" toggles class "slideDown" on ".slideDown-demo"
+  clicking on ".slideLeft-demo" toggles class "slideLeft" on ".slideLeft-demo"
+  clicking on ".slideRight-demo" toggles class "slideRight" on ".slideRight-demo"
+  clicking on ".flipIn-demo" toggles class "flipIn" on ".flipIn-demo"
+  clicking on ".rotateRight-demo" toggles class "rotateRight" on ".rotateRight-demo"
+  clicking on ".rotateLeft-demo" toggles class "rotateLeft" on ".rotateLeft-demo"
+  clicking on ".flash-demo" toggles class "flash" on ".flash-demo"
+  clicking on ".shake-demo" toggles class "shake" on ".shake-demo"
+</code>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="variables" class="p3-percent">
+  <a class="section-header row space-between align-baseline" href="https://github.com/jamiewilson/corpus/blob/master/_variables.scss">
+    <h1 class="m0 capitalize">variables</h1>
+    <span class="color-grey">_variables.scss</span>
+  </a>
+
+<h2>Overwrite the default variables</h2>
+<p class="mb3">Each file has it’s own <code>!default</code> variables related to that module. To overrwrite them, simply redefine any of the following variables somewhere in your project.</p>
+
+<pre class="language-scss line-numbers mb2"><code>
+//====================================================
+//  _typography.scss
 //====================================================
 
 @font-face { font-family: 'Office Code Pro'; src: url('../fonts/OfficeCodePro-Regular.woff'); }
 $base-font: 'Helvetica Neue', Helvetica, sans-serif;
 $mono-font: 'Office Code Pro', Monaco, Consolas, monospace;
+$base-font-size: 1rem;
 $base-line-height: 1.6;
+
+$h1: $base-font-size * 2.25;
+$h2: $base-font-size * 1.75t;
+$h3: $base-font-size * 1.5;
+$h4: $base-font-size * 1.25;
+$h5: $base-font-size * 1.125;
+$h6: $base-font-size;
+
+//====================================================
+//  _sizing.scss
+//====================================================
+
+$container-width: 1000px;
 
 //====================================================
 //  _sidebar.scss
@@ -591,7 +791,7 @@ $margin-fixed:    1rem;
 
 $border-style: solid;
 $border-color: rgba(0,0,0,0.1);
-$border-radius: 3px !default;
+$border-radius: 3px;
 
 $border-1: 1px;
 $border-2: 2px;
@@ -601,8 +801,26 @@ $border-3: 3px;
 //  _breakpoints.scss
 //====================================================
 
-$small-break: 50em;</code></pre>
+$small-break: 480px;
+$medium-break: 800px;
 
+@mixin small() {
+  @media screen and (max-width: $small-break) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media screen and (max-width: $medium-break) {
+    @content;
+  }
+}
+
+@mixin large() {
+  @media screen and (min-width: $small-break) {
+    @content;
+  }
+}</code></pre>
 
 </section>
 
@@ -610,6 +828,7 @@ $small-break: 50em;</code></pre>
     </main>
 
   <script src="/scripts/prism.js"></script>
+<script src="/scripts/uilang.js"></script>
 
   </body>
 </html>
