@@ -33,3 +33,10 @@
     min-width: 0;
   }
 }
+
+// all columns inside rows get full width on mobile
+.row > .column {
+  @include small {
+    width: 100% !important;
+  }
+}
