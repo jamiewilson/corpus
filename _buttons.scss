@@ -15,10 +15,12 @@ input[type=submit] {
   font-size: inherit;
   text-align: center;
   line-height: 1;
-  height: 100%;
+  height: auto;
+  // keeps buttons from filling flex container
+  align-self: flex-start;
   display: inline-block;
   border-radius: $border-radius;
-  padding: $padding-fixed;
+  padding: $padding;
   transition: box-shadow 200ms;
 
   &:hover  { box-shadow: inset 0 0 0 20rem fade-out($black, 0.9);}

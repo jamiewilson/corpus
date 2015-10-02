@@ -1,12 +1,12 @@
 //====================================================
-//  Grid
+//  Grid Componets
 //====================================================
 
 .column {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  height: 100%;
+  height: auto;
   flex-wrap: nowrap;
   @include small {
     min-width: 100%;
@@ -16,27 +16,54 @@
 .row {
   display: flex;
   flex: 1 1 auto;
-  height: 100%;
+  height: auto;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+.row > .column {
+  @include small {
+    width: 100% !important;
+  }
+}
+
+//====================================================
+//  Gutters
+//====================================================
+
 // Add .gutters to .row/.column elements
-.gutters { padding: $padding-percent; }
+.gutters { padding: $padding; }
 
 // All direct descendants of .gutters get margin
 .gutters > .column,
 .gutters > .row {
-  margin: $margin-percent;
+  margin: $margin;
   @include small {
     width: 100% !important;
     min-width: 0;
   }
 }
 
-// all columns inside rows get full width on mobile
-.row > .column {
-  @include small {
-    width: 100% !important;
-  }
+// offset padding/margin to maintain width
+.gutters > {
+  .w5    { width:  calc(5%   -  #{$padding + $margin}); }
+  .w10   { width:  calc(10%  -  #{$padding + $margin}); }
+  .w15   { width:  calc(15%  -  #{$padding + $margin}); }
+  .w20   { width:  calc(20%  -  #{$padding + $margin}); }
+  .w25   { width:  calc(25%  -  #{$padding + $margin}); }
+  .w30   { width:  calc(30%  -  #{$padding + $margin}); }
+  .w35   { width:  calc(35%  -  #{$padding + $margin}); }
+  .w40   { width:  calc(40%  -  #{$padding + $margin}); }
+  .w45   { width:  calc(45%  -  #{$padding + $margin}); }
+  .w50   { width:  calc(50%  -  #{$padding + $margin}); }
+  .w55   { width:  calc(55%  -  #{$padding + $margin}); }
+  .w60   { width:  calc(60%  -  #{$padding + $margin}); }
+  .w65   { width:  calc(65%  -  #{$padding + $margin}); }
+  .w70   { width:  calc(70%  -  #{$padding + $margin}); }
+  .w75   { width:  calc(75%  -  #{$padding + $margin}); }
+  .w80   { width:  calc(80%  -  #{$padding + $margin}); }
+  .w85   { width:  calc(85%  -  #{$padding + $margin}); }
+  .w90   { width:  calc(90%  -  #{$padding + $margin}); }
+  .w95   { width:  calc(95%  -  #{$padding + $margin}); }
+  .w100  { width:  calc(100% -  #{$padding + $margin}); }
 }

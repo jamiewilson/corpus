@@ -25,7 +25,7 @@
   font-size: $base-font-size;
   height: auto;
   outline: none;
-  padding: $padding-fixed;
+  padding: $padding;
   width: 100%;
   transition: border-color 200ms;
 
@@ -63,38 +63,38 @@
 .input.novalidate,
 .input.hide-validate-icon {
   background-image: none;
-  padding-right: $padding-fixed;
+  padding-right: $padding;
 }
 
 .input-wrap,
 .radio-group,
 .checkbox-group,
 .fieldset {
-  margin-bottom: $margin-fixed * 2;
+  margin-bottom: $margin * 2;
 }
 
 .label {
   display: inline-block;
-  margin-bottom: $margin-fixed / 2;
+  margin-bottom: $margin / 2;
 }
 
 .fieldset {
   background-color: $silver;
   border: $border-1 $border-style $border-color;
-  padding: $padding-fixed ($padding-fixed * 2);
+  padding: $padding ($padding * 2);
 }
 
 .radio-group,
 .checkbox-group {
   border-radius: $border-radius;
   background-color: $silver;
-  padding: $padding-fixed ($padding-fixed * 1.5);
+  padding: $padding ($padding * 1.5);
 }
 
 .radio-wrap,
 .checkbox-wrap {
   display: inline-block;
-  margin-right: $margin-fixed;
+  margin-right: $margin;
   &:last-child { margin-right: 0; }
 
   @include small {

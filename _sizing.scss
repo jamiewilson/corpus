@@ -108,30 +108,6 @@
 .min-w95   { min-width: 95%; }
 .min-w100  { min-width: 100%;}
 
-// reference _grid.scss
-.gutters > {
-  .w5    { width:  5%  - $padding-percent - $margin-percent; }
-  .w10   { width:  10% - $padding-percent - $margin-percent; }
-  .w15   { width:  15% - $padding-percent - $margin-percent; }
-  .w20   { width:  20% - $padding-percent - $margin-percent; }
-  .w25   { width:  25% - $padding-percent - $margin-percent; }
-  .w30   { width:  30% - $padding-percent - $margin-percent; }
-  .w35   { width:  35% - $padding-percent - $margin-percent; }
-  .w40   { width:  40% - $padding-percent - $margin-percent; }
-  .w45   { width:  45% - $padding-percent - $margin-percent; }
-  .w50   { width:  50% - $padding-percent - $margin-percent; }
-  .w55   { width:  55% - $padding-percent - $margin-percent; }
-  .w60   { width:  60% - $padding-percent - $margin-percent; }
-  .w65   { width:  65% - $padding-percent - $margin-percent; }
-  .w70   { width:  70% - $padding-percent - $margin-percent; }
-  .w75   { width:  75% - $padding-percent - $margin-percent; }
-  .w80   { width:  80% - $padding-percent - $margin-percent; }
-  .w85   { width:  85% - $padding-percent - $margin-percent; }
-  .w90   { width:  90% - $padding-percent - $margin-percent; }
-  .w95   { width:  95% - $padding-percent - $margin-percent; }
-  .w100  { width: 100% - $padding-percent - $margin-percent; }
-}
-
 //====================================================
 //  Height
 //====================================================
