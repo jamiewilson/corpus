@@ -84,6 +84,14 @@
   padding: $padding ($padding * 2);
 }
 
+//====================================================
+//  Checkbox
+//====================================================
+
+.input[type=checkbox] {
+  display: inline;
+}
+
 .radio-group,
 .checkbox-group {
   border-radius: $border-radius;
