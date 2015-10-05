@@ -1,3 +1,24 @@
+input,
+select,
+textarea,
+fieldset,
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0;
+}
+
+label { vertical-align: middle; }
+
+select { -webkit-appearance: none; }
+
+textarea {
+  line-height: 1.75;
+  padding: .5rem .5rem;
+  vertical-align: top;
+}
+
 .input[type=button],
 .input[type=date],
 .input[type=datetime],
@@ -85,10 +106,11 @@
 }
 
 //====================================================
-//  Checkbox
+//  Checkbox/Radio
 //====================================================
 
-.input[type=checkbox] {
+.input[type=checkbox],
+.input[type=radio] {
   display: inline;
 }
 
@@ -181,6 +203,7 @@ input[type=color]::-webkit-color-swatch-wrapper {
 .input[type=file] {
   font-size: 0.75rem;
   background-color: $silver;
+  display: block;
 }
 
 //====================================================
