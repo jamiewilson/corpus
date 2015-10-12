@@ -9,7 +9,7 @@ $sidebar-width: 300px !default;
 }
 
 // If sidebar exists,
-// offset <main> by it width
+// offset <main> by it's width
 .sidebar + main {
   margin-left: $sidebar-width;
   @include medium {
