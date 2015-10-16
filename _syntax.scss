@@ -103,7 +103,10 @@ pre[class*="language-"].language-javascript {
 .token.string,
 .token.char,
 .token.builtin,
-.token.inserted {
+.token.inserted,
+.language-clike .token.boolean,
+.language-javascript .token.keyword,
+.language-javascript .token.number {
 	color: $yellow;
 }
 
@@ -112,7 +115,9 @@ pre[class*="language-"].language-javascript {
 }
 
 .token.attr-value,
-.token.keyword {
+.token.keyword,
+.language-clike .token.string,
+.language-javascript .token.string {
 	color: $paleblue;
 }
 

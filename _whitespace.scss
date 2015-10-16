@@ -6,7 +6,7 @@ $padding: 1rem !default;
 $margin:  1rem !default;
 
 // All
-.p0 { padding: 0; }
+.p0 { padding: 0 !important; }
 .p1 { padding: $padding; }
 .p2 { padding: $padding * 2; }
 .p3 { padding: $padding * 3; }
@@ -14,7 +14,7 @@ $margin:  1rem !default;
 .p5 { padding: $padding * 5; }
 
 // Top
-.pt0 { padding-top: 0; }
+.pt0 { padding-top: 0 !important; }
 .pt1 { padding-top: $padding; }
 .pt2 { padding-top: $padding * 2; }
 .pt3 { padding-top: $padding * 3; }
@@ -22,7 +22,7 @@ $margin:  1rem !default;
 .pt5 { padding-top: $padding * 5; }
 
 // Right
-.pr0 { padding-right: 0; }
+.pr0 { padding-right: 0 !important; }
 .pr1 { padding-right: $padding; }
 .pr2 { padding-right: $padding * 2; }
 .pr3 { padding-right: $padding * 3; }
@@ -30,7 +30,7 @@ $margin:  1rem !default;
 .pr5 { padding-right: $padding * 5; }
 
 // Bottom
-.pb0 { padding-bottom: 0; }
+.pb0 { padding-bottom: 0 !important; }
 .pb1 { padding-bottom: $padding; }
 .pb2 { padding-bottom: $padding * 2; }
 .pb3 { padding-bottom: $padding * 3; }
@@ -38,7 +38,7 @@ $margin:  1rem !default;
 .pb5 { padding-bottom: $padding * 5; }
 
 // Left
-.pl0 { padding-left: 0; }
+.pl0 { padding-left: 0 !important; }
 .pl1 { padding-left: $padding; }
 .pl2 { padding-left: $padding * 2; }
 .pl3 { padding-left: $padding * 3; }
@@ -46,7 +46,7 @@ $margin:  1rem !default;
 .pl5 { padding-left: $padding * 5; }
 
 // Top-Bottom
-.ptb0 { padding-top: 0; padding-bottom: 0; }
+.ptb0 { padding-top: 0 !important; padding-bottom: 0 !important; }
 .ptb1 { padding-top: $padding; padding-bottom: $padding; }
 .ptb2 { padding-top: $padding * 2; padding-bottom: $padding * 2; }
 .ptb3 { padding-top: $padding * 3; padding-bottom: $padding * 3; }
@@ -54,7 +54,7 @@ $margin:  1rem !default;
 .ptb5 { padding-top: $padding * 5; padding-bottom: $padding * 5; }
 
 // Left-Right
-.plr0 { padding-left: 0; padding-right: 0; }
+.plr0 { padding-left: 0 !important; padding-right: 0 !important; }
 .plr1 { padding-left: $padding; padding-right: $padding; }
 .plr2 { padding-left: $padding * 2; padding-right: $padding * 2; }
 .plr3 { padding-left: $padding * 3; padding-right: $padding * 3; }
@@ -69,7 +69,7 @@ $margin:  1rem !default;
 .ma  { margin: auto; }
 
 // All
-.m0 { margin: 0; }
+.m0 { margin: 0 !important; }
 .m1 { margin: $margin; }
 .m2 { margin: $margin * 2; }
 .m3 { margin: $margin * 3; }
@@ -77,7 +77,7 @@ $margin:  1rem !default;
 .m5 { margin: $margin * 5; }
 
 // Top
-.mt0 { margin-top: 0; }
+.mt0 { margin-top: 0 !important; }
 .mt1 { margin-top: $margin; }
 .mt2 { margin-top: $margin * 2; }
 .mt3 { margin-top: $margin * 3; }
@@ -85,7 +85,7 @@ $margin:  1rem !default;
 .mt5 { margin-top: $margin * 5; }
 
 // Right
-.mr0 { margin-right: 0; }
+.mr0 { margin-right: 0 !important; }
 .mr1 { margin-right: $margin; }
 .mr2 { margin-right: $margin * 2; }
 .mr3 { margin-right: $margin * 3; }
@@ -93,7 +93,7 @@ $margin:  1rem !default;
 .mr5 { margin-right: $margin * 5; }
 
 // Bottom
-.mb0 { margin-bottom: 0; }
+.mb0 { margin-bottom: 0 !important; }
 .mb1 { margin-bottom: $margin; }
 .mb2 { margin-bottom: $margin * 2; }
 .mb3 { margin-bottom: $margin * 3; }
@@ -101,7 +101,7 @@ $margin:  1rem !default;
 .mb5 { margin-bottom: $margin * 5; }
 
 // Left
-.ml0 { margin-left: 0; }
+.ml0 { margin-left: 0 !important; }
 .ml1 { margin-left: $margin; }
 .ml2 { margin-left: $margin * 2; }
 .ml3 { margin-left: $margin * 3; }
@@ -109,7 +109,7 @@ $margin:  1rem !default;
 .ml5 { margin-left: $margin * 5; }
 
 // Top/Bottom
-.mtb0 { margin-top: 0; margin-bottom: 0; }
+.mtb0 { margin-top: 0 !important; margin-bottom: 0 !important; }
 .mtb1 { margin-top: $margin; margin-bottom: $margin; }
 .mtb2 { margin-top: $margin * 2; margin-bottom: $margin * 2; }
 .mtb3 { margin-top: $margin * 3; margin-bottom: $margin * 3; }
@@ -117,7 +117,7 @@ $margin:  1rem !default;
 .mtb5 { margin-top: $margin * 5; margin-bottom: $margin * 5; }
 
 // Left/Right
-.mlr0 { margin-left: 0; margin-right: 0; }
+.mlr0 { margin-left: 0 !important; margin-right: 0 !important; }
 .mlr1 { margin-left: $margin; margin-right: $margin; }
 .mlr2 { margin-left: $margin * 2; margin-right: $margin * 2; }
 .mlr3 { margin-left: $margin * 3; margin-right: $margin * 3; }
