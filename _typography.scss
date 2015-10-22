@@ -170,13 +170,10 @@ hr {
 //  Font Sizing
 //====================================================
 
-.fs-base     { font-size: $base-font-size; }
-.fs-medium   { font-size: medium; }
-.fs-xx-small { font-size: xx-small; }
-.fs-x-small  { font-size: x-small; }
-.fs-small    { font-size: small; }
-.fs-large    { font-size: large; }
-.fs-x-large  { font-size: x-large; }
-.fs-xx-large { font-size: xx-large; }
-.fs-smaller  { font-size: smaller; }
-.fs-larger   { font-size: larger; }
+.fs-base    { font-size: $base-font-size; }
+.fs-xsmall  { font-size: 50%; }
+.fs-small   { font-size: 75%; }
+.fs-large   { font-size: 125%; }
+.fs-xlarge  { font-size: 150%; }
+.fs-xxlarge { font-size: 175%; }
+.fs-double  { font-size: 200%; }
