@@ -136,6 +136,7 @@ hr {
 .underline        { text-decoration: underline; }
 .no-underline     { text-decoration: none; }
 .list-style-none  { list-style-type: none; }
+.list-inline li   { display: inline; }
 
 .thin    {font-weight: 200; }
 .regular {font-weight: 400; }
@@ -167,6 +168,7 @@ hr {
 //  Line-Height
 //====================================================
 
+.lh0 { line-height:  0; }
 .lh1 { line-height:  1; }
 .lh2 { line-height:  1.2; }
 .lh3 { line-height:  1.3; }

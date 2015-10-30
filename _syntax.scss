@@ -14,61 +14,35 @@ $red:        #CF5340 !default;
 $darkred:    #893121 !default;
 $maroon:     #55201B !default;
 
-// Utility Classes
-.color-paleblue  { color: $paleblue; }
-.color-blue      { color: $blue; }
-.color-slate     { color: $slate; }
-.color-palegreen { color: $palegreen; }
-.color-green     { color: $green; }
-.color-darkgreen { color: $darkgreen; }
-
-.color-yellow     { color: $yellow; }
-.color-paleyellow { color: $paleyellow; }
-.color-orange     { color: $orange; }
-.color-red        { color: $red; }
-.color-darkred    { color: $darkred; }
-.color-maroon     { color: $maroon; }
-
-.bg-paleblue  { background-color: $paleblue; }
-.bg-blue      { background-color: $blue; }
-.bg-slate     { background-color: $slate; }
-.bg-palegreen { background-color: $palegreen; }
-.bg-green     { background-color: $green; }
-.bg-darkgreen { background-color: $darkgreen; }
-
-.bg-paleyellow { background-color: $paleyellow; }
-.bg-yellow     { background-color: $yellow; }
-.bg-orange     { background-color: $orange; }
-.bg-red        { background-color: $red; }
-.bg-darkred    { background-color: $darkred; }
-.bg-maroon     { background-color: $maroon; }
-
 //====================================================
 //  Code Blocks
 //====================================================
 
-code[class*="language-"],
-pre[class*="language-"] {
+pre { margin-bottom: $margin; }
+
+pre[class*="language-"],
+code[class*="language-"] {
   position: relative;
   color: $yellow;
 }
 
-pre::-webkit-scrollbar                  { width: 14px; height: 14px; background-color: transparent; }
-pre::-webkit-scrollbar-track            { background-color: transparent; }
-pre::-webkit-scrollbar-thumb:vertical   { background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="296" viewBox="0 -135 14 296" enable-background="new 0 -135 14 296"><path fill="#F18260" d="M6-129h2v290h-2z"/></svg>') no-repeat; }
-pre::-webkit-scrollbar-thumb:horizontal { background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="14" viewBox="0 0 600 14"><path fill="#F18260" d="M10 6h590v2h-590z"/></svg>') no-repeat; }
-pre::-webkit-scrollbar-corner           { background-color: transparent; }
-pre::-webkit-resizer                    { background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><path fill="#F18260" d="M13 13h-13l13-13z"/></svg>') no-repeat; background-position: bottom right; }
+pre::-webkit-scrollbar        { height: 12px; width: 12px; overflow: visible; }
+pre::-webkit-scrollbar-track  { background: none; }
+pre::-webkit-scrollbar-corner { background: none; }
+pre::-webkit-scrollbar-thumb  { background: $accent; border: 5px solid $black; }
 
 //====================================================
 //  Syntax Highlighting
 //====================================================
 
-code[class*="language-"].language-markup,
+
 pre[class*="language-"].language-markup,
-code[class*="language-"].language-javascript,
-pre[class*="language-"].language-javascript {
-	color: $white;
+code[class*="language-"].language-markup,
+pre[class*="language-"].language-html,
+code[class*="language-"].language-html,
+pre[class*="language-"].language-javascript,
+code[class*="language-"].language-javascript {
+  color: $white;
 }
 
 .token.comment,
@@ -79,12 +53,12 @@ pre[class*="language-"].language-javascript {
 .language-css .token.string,
 .language-scss .token.string,
 .style .token.string {
-	color: $midgrey;
+  color: $midgrey;
 }
 
 .token.property,
 .language-markup .token.punctuation {
-	color: $blue;
+  color: $blue;
 }
 
 .token.tag,
@@ -95,7 +69,7 @@ pre[class*="language-"].language-javascript {
 .token.deleted,
 .language-css .token.selector,
 .language-scss .token.selector {
-	color: $green;
+  color: $green;
 }
 
 .token.selector,
@@ -106,38 +80,38 @@ pre[class*="language-"].language-javascript {
 .token.inserted,
 .language-clike .token.boolean,
 .language-javascript .token.keyword,
-.language-javascript .token.number {
-	color: $yellow;
+.language-javascript .token.number,
+.language-css .token.keyword,
+.language-scss .token.keyword {
+  color: $yellow;
 }
 
 .token.punctuation {
-	color: $silver;
+  color: $silver;
 }
 
 .token.attr-value,
 .token.keyword,
 .language-clike .token.string,
 .language-javascript .token.string {
-	color: $paleblue;
+  color: $paleblue;
 }
 
 .token.operator,
 .token.atrule,
 .token.function,
 .token.url,
-.language-css .token.keyword,
-.language-scss .token.keyword,
 .token.regex,
 .token.variable {
-	color: $orange;
+  color: $orange;
 }
 
 .token.important, {
-	color: $red;
+  color: $red;
 }
 
 .token.entity {
-	cursor: help;
+  cursor: help;
 }
 
 //====================================================
@@ -145,7 +119,7 @@ pre[class*="language-"].language-javascript {
 //====================================================
 
 pre[class*='language-'][data-language]::before {
-	content: attr(data-language);
+  content: attr(data-language);
   position: absolute;
   top: 0;
   right: 0;
@@ -167,34 +141,34 @@ pre[class*='language-'][data-language]::before {
 //====================================================
 
 pre.line-numbers {
-	padding-left: 4.5em;
-	counter-reset: linenumber;
+  padding-left: 4.5em;
+  counter-reset: linenumber;
 }
 
 pre.line-numbers > code {
-	position: relative;
+  position: relative;
 }
 
 .line-numbers .line-numbers-rows {
-	position: absolute;
-	pointer-events: none;
-	top: 0;
-	left: -4.5em;
-	width: 3em; /* works for line-numbers below 1000 lines */
-	border-right: 1px solid $darkgrey;
-	user-select: none;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: -4.5em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  border-right: 1px solid $darkgrey;
+  user-select: none;
 }
 
 .line-numbers-rows > span {
-	pointer-events: none;
-	display: block;
-	counter-increment: linenumber;
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
 }
 
 .line-numbers-rows > span:before {
-	content: counter(linenumber);
-	color: lighten($darkgrey, 10%) ;
-	display: block;
-	padding-right: 0.8em;
-	text-align: right;
+  content: counter(linenumber);
+  color: lighten($darkgrey, 10%) ;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
 }
