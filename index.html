@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Corpus. A collection of CSS things.</title>
+  <title>Corpus.: A collection of CSS things.</title>
   <meta name="description" content="A collection of CSS things.">
 
-  <link rel="stylesheet" href="/css/corpus.css">
-  <link rel="canonical" href="http://corpuscss.com/">
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="/img/favicon.png" rel="shortcut icon">
 </head>
 
   <body class="row fullscreen">
 
     <nav class="sidebar bg-black p2 h100 fixed scroll-vertical no-scrollbar">
-  <h1 class="m0 color-white"><a class="no-underline" href="/">Corpus</a><span class="alpha-badge fs-small italic color-accent">Alpha</span></h1>
+  <h1 class="m0 color-white"><a class="no-underline" href="/">Corpus</a><span class="alpha-badge italic color-accent">Alpha</span></h1>
   <p class="color-midgrey">A collection of CSS things.</p>
   <ul class="list-style-none lh9 bt1 border-darkgrey mt2 pt2">
     <li><a href="#intro">Intro</a></li>
@@ -43,7 +43,7 @@
   <h3 class="mb2">Corpus is yet another CSS toolkit. It’s basically a collection of the things I find <a href="http://jamiewilson.io">myself</a> returning to for each new project. It uses <a href="http://tympanus.net/codrops/css_reference/flexbox/">Flexbox</a> for the grid system, <a href="http://bitsofco.de/2015/viewport-vs-percentage-units/">viewport-based heights and percentage-based widths</a>, is heavily influenced by Basscss’s <a href="http://www.basscss.com/docs/white-space/">White Space</a> module, and has a few useful greyscale color utilities. For syntax highlighting I'm using <a href="http://prismjs.com/">Prism.js</a> and my own <a href="https://packagecontrol.io/packages/Predawn">Predawn</a> color scheme, with code set in <a href="https://github.com/nathco/Office-Code-Pro">Office Code Pro</a>. Styles are written in SCSS.</h3>
   <a class="btn mb4" href="https://github.com/jamiewilson/corpus">Download on GitHub</a>
 
-  <h6 class="color-grey italic m0">In addition to Corpus, this site was built with <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="http://jekyllrb.com/">Jekyll</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, <a href="http://livereload.com/">LiveReload</a>, <a href="http://uilang.com/">uilang</a> and <a href="https://pages.github.com/">GitHub Pages</a>.</h6>
+  <h6 class="color-grey italic m0">In addition to Corpus, this site was built with <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://gulpjs.com/">Gulp</a>, <a href="http://www.browsersync.io/">BrowserSync</a>, <a href="http://uilang.com/">uilang</a> and <a href="https://pages.github.com/">GitHub Pages</a>.</h6>
 </section>
 
 
@@ -350,7 +350,7 @@
       </div>
     </section>
     <section class="w100">
-      <input type="submit" value="Submit" />
+      <input class="btn-primary" type="submit" value="Submit" />
     </section>
   </form>
 </section>
@@ -824,8 +824,6 @@ $medium-break: 800px;
 
     </main>
 
-  <script src="/scripts/prism.js"></script>
-<script src="/scripts/uilang.js"></script>
-
+  <script src="/scripts/main.min.js"></script>
   </body>
 </html>
